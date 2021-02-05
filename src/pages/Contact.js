@@ -13,6 +13,7 @@ function Contact() {
             <h5 className="my-5">Thanks for taking the time to reach out. How can I help you today?</h5>
             </div>
 
+
 <div className="col-lg-6">
              <form id="contact-form" className="text-left shadow py-5 px-5" method="POST">
     <div className="form-group">
