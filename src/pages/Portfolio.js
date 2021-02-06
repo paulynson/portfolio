@@ -15,7 +15,7 @@ function Portfolio() {
 {/* first row */}
 <div className="card shadow">
 
-<a href="https://1q0mv.csb.app" target="_blank">   <img src={wk3}  className="img-fluid" alt=""/> </a>
+<a href="https://1q0mv.csb.app" target="_blank" rel="noreferrer">   <img src={wk3}  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website</h6>
@@ -27,7 +27,7 @@ function Portfolio() {
 
 {/* second row */}
 <div className="card shadow">
-    <a href="http://leisure-lawn.com" target="_blank">   <img src={wk1}  className="img-fluid" alt=""/> </a>
+    <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website for Leisure Lawn Business</h6>
@@ -38,7 +38,7 @@ function Portfolio() {
 
 {/* Third row */}
 <div className="card shadow">
-<a href="http://mobiletoiletsystems.com.ng" target="_blank">   <img src={wk2}  className="img-fluid" alt=""/> </a>
+<a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="img-fluid" alt=""/> </a>
 <div className="card-body">
     <h6 className="text-lg-left">Creating a portable toilet system website</h6>
 
@@ -49,7 +49,7 @@ function Portfolio() {
 {/* Forth row */}
 <div className="card shadow">
 
-<a href="https://1q0mv.csb.app" target="_blank">   <img src=""  className="img-fluid" alt=""/> </a>
+<a href="https://1q0mv.csb.app" target="_blank" rel="noreferrer">   <img src=""  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website</h6>

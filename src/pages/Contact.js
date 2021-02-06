@@ -35,10 +35,10 @@ function Contact() {
 <div className="col-lg-6">
  
 <div className="text-left text-dark align-items-center mx-4">
-<div className="py-1 my-3"><a href="#" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
-<div className="py-1 my-3"><a href="#" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
-<div className="py-1 my-3"><a href="#" className="text-dark "> <FaInstagram /> Follow me on Instagram </a>  </div>
-<div className="py-1 my-3"><a href="#" className="text-dark "> <FaGithub /> Connect on GitHub </a>  </div>
+<div className="py-1 my-3"><a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
+<div className="py-1 my-3"><a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
+<div className="py-1 my-3"><a href="https://www.instagram.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark"> <FaInstagram /> Follow me on Instagram </a>  </div>
+<div className="py-1 my-3"><a href="https://github.com/paulynson" className="text-dark" target="-blank" rel="noreferrer"> <FaGithub /> Connect on GitHub </a>  </div>
   </div>
  
 

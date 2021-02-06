@@ -17,10 +17,10 @@ function Footer() {
   </div>
 
   <div className="mt-3 d-flex justify-content-center text-white">
-<a href="#" className="text-white px-3"> <FaFacebook /> </a> 
-<a href="#" className="text-white px-3"> <FaTwitter /> </a>
-<a href="#" className="text-white px-3"> <FaInstagram /> </a> 
-<a href="#" className="text-white px-3"> <FaGithub /> </a> 
+<a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-white px-3"> <FaFacebook /> </a> 
+<a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-white px-3"> <FaTwitter /> </a>
+<a href="https://instagram.com/Abakadapaul/" target="-blank" rel="noreferrer"  className="text-white px-3"> <FaInstagram /> </a> 
+<a href="https://github.com/paulynson" target="-blank" rel="noreferrer" className="text-white px-3"> <FaGithub /> </a> 
   </div>
 </footer>
         </div>

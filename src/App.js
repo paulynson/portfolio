@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
-import Navbar from './component/Navbar';
-import Footer from './component/Footer';
+import Navbar from './component/layout/Navbar';
+import Footer from './component/layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';

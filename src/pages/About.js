@@ -1,6 +1,5 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import heroimage from '../assets/images/heroimage.png'
 import about from '../assets/images/about.png'
 
 function About() {
