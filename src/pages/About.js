@@ -18,7 +18,7 @@ function About() {
                 </div>
 
                 <div className="col-lg-6 text-center order-sm-1 order-md-1 order-lg-2">
-                <img src={about} alt=""/>
+                <img src={about} className="img-fluid" alt=""/>
                 
                 </div>
 
@@ -26,9 +26,9 @@ function About() {
              
             </div>
 
-            <div className="row py-5 bg-light bg-gradient-light px-5 text-center d-flex justify-content-center">
+            <div className="row py-5 bg-light px-2 text-center d-flex justify-content-center">
 
-<div className="col-lg-4 col-md-6 bg-white col-sm-12 col-12 text-center shadow px-5 py-5 mx-md-3 mx-sm-3">
+<div className="col-lg-6 col-md-6 bg-white col-sm-12 col-12 text-center shadow px-5 py-5 mx-md-3 mx-sm-3">
     <h3 className="text-center font-weight-bold">Front-end Developer</h3>
     <p className="text-center mt-3">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
 
@@ -51,7 +51,7 @@ function About() {
 
 {/* Design Aspect */}
 
-<div className="col-lg-4 col-md-6 col-sm-12 bg-white col-12 text-center shadow px-5 py-5 mx-5 mx-md-3 mx-sm-3">
+<div className="col-lg-6 col-md-6 col-sm-12 bg-white col-12 text-center shadow px-5 py-5 mx-md-3 mx-sm-3">
     <h3 className="text-center font-weight-bold">Designer</h3>
     <p className="text-center mt-3">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
 
