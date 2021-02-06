@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import wk1 from '../assets/images/wk1.PNG'
 import wk2 from '../assets/images/wk2.PNG'
 import wk3 from '../assets/images/wk3.PNG'
-import { Button } from 'react-bootstrap';
 
 function Home() {
     return (
