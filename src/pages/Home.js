@@ -23,10 +23,10 @@ function Home() {
 
 
 
-            <div className="row d-flex align-items-center">
-                <div className="container col-lg-8 text-lg-center order-sm-2 order-md-2 order-lg-1">
-                    <h2 className="text-dark font-weight-bolder">I'll make your Website Responsive and Beautiful</h2>
-                <small><p className="text-dark text-lg-center mt-4">I Design (Graphics, Websites & UI Design), Develop Websites, Whiteboard Animation</p></small>
+            <div className="d-flex align-items-center">
+                <div className="container text-center">
+                    <h1 className="text-dark font-weight-bold p-2">I'll make your Website Responsive and Beautiful</h1>
+                <p className="text-dark text-lg-center mt-4">I  Develop Websites & also Design (Graphics, Websites & UI Design)</p>
 
                 <div className="mt-4">
 
@@ -51,9 +51,9 @@ function Home() {
 <a href="https://1q0mv.csb.app" target="_blank" rel="noreferrer">   <img src={wk3}  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
-    <h6 className="text-lg-left">Creating Website</h6>
+    <p className="text-lg-left card-title">Creating Website</p>
 
-    <p className="text-lg-left text-muted"><small>Side Project</small></p>
+    <p className="text-lg-left text-muted card-text"><small>Side Project</small></p>
 </div>
 
 </div>
@@ -63,9 +63,9 @@ function Home() {
     <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
-    <h6 className="text-lg-left">Creating Website for Leisure Lawn Business</h6>
+    <p className="text-lg-left card-title">Creating Website for Leisure Lawn Business</p>
 
-    <p className="text-lg-left text-muted"><small>Website Design</small></p>
+    <p className="text-lg-left text-muted card-text"><small>Website Design</small></p>
 </div>
 </div>
 
@@ -73,9 +73,9 @@ function Home() {
 <div className="card shadow">
 <a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="img-fluid" alt=""/> </a>
 <div className="card-body">
-    <h6 className="text-lg-left">Creating a portable toilet system website</h6>
+    <p className="text-lg-left card-title">Creating a portable toilet system website</p>
 
-    <p className="text-lg-left text-muted"><small>Website Design with WordPress</small></p>
+    <p className="text-lg-left text-muted card-text"><small>Website Design with WordPress</small></p>
 </div>
 </div>
 

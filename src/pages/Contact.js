@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 function Contact() {
     return (
         <div>
-             <div className="bg-light p-5 mt-5 d-flex justify-content-center align-items-center text-center">
+             <div className=" p-2 my-5 d-flex justify-content-center align-items-center text-center">
              <div className="row container">
              <div className="d-flex justify-content-center container">
             <h5 className="my-5">Thanks for taking the time to reach out. How can I help you today?</h5>
@@ -32,9 +32,9 @@ function Contact() {
 </form>
 </div>
 
-<div className="col-lg-6">
+<div className="col-lg-6  d-md-flex justify-content-md-center">
  
-<div className="text-left text-dark align-items-center mx-4">
+<div className="text-left text-dark align-items-center mx-4 text-lg-left text-md-left text-sm-center">
 <div className="py-1 my-3"><a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
 <div className="py-1 my-3"><a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
 <div className="py-1 my-3"><a href="https://www.instagram.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark"> <FaInstagram /> Follow me on Instagram </a>  </div>
