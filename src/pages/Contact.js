@@ -18,11 +18,11 @@ function Contact() {
 
     <div className="justify-content-center d-flex flex-sm-column flex-md-column flex-lg-column">
     <div className="mt-2 mx-3">
-    <button className="btn btn-dark my-3 form-control reachme"><a href="mailto:paulabakada@gmail.com">E-Mail Me</a></button>
+    <a href="mailto:paulabakada@gmail.com" className="btn btn-dark my-3 form-control reachme">E-Mail Me</a>
     </div>
          
     <div className="mt-2 mx-3">
-    <button className="btn btn-dark my-3 form-control reachme"><a href="tel:08125157424">Call Me</a></button>
+    <a href="tel:08125157424" className="btn btn-dark my-3 form-control reachme">Call Me</a>
     </div>
     </div>
 
