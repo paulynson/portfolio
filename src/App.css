@@ -328,7 +328,7 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 .reachme:before {
   content: '';
-  background: linear-gradient(45deg, #ffffff, #fffff3, #ffff7f, #00ffd2, #ffffff, #fffff3, #f3f3f3);
+  background: linear-gradient(45deg, #445555, #030404, #ffff7f, #00ffd2, #ffffff, #333334, #030303);
   position: absolute;
   top: -2px;
   left:-2px;
