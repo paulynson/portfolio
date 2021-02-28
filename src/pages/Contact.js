@@ -16,7 +16,7 @@ function Contact() {
 
 <div className="col-lg-12">
 
-    <div className="justify-content-center d-inline-flex">
+    <div className="justify-content-center d-flex flex-sm-column flex-md-column">
     <div className="mt-2 mx-3">
     <button className="btn btn-dark my-3 form-control reachme"><a href="mailto:paulabakada@gmail.com">E-Mail Me</a></button>
     </div>
