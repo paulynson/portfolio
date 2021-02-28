@@ -343,10 +343,6 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 10px;
 }
 
-.reachme:active {
-  color: #0255C2;
-}
-
 .reachme:active:after {
   background: transparent;
 }
