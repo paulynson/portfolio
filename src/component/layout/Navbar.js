@@ -14,9 +14,9 @@ function Navbar() {
             
             <nav className="navbar navbar-expand-lg navbar-dark bg-darken fixed-top">
   <div className="container-fluid">
-    <Link className="navbar-brand logoImg" to="/"><img src={pw_logo} alt=""/></Link>
+    <Link className="navbar-brand logoImg" to="/"><img src={pw_logo} alt="Paul Logo"/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span> <img src={menu} alt=""/> </span>
+      <span> <img src={menu} alt="menu-bar"/> </span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <div className="navbar-nav ml-auto mb-2 mb-lg-0">

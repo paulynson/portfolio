@@ -19,7 +19,7 @@ function About() {
                 </div>
 
                 <div className="col-lg-6 text-center order-sm-1 order-md-1 order-lg-2" data-aos="fade-up" data-aos-duration="1000">
-                <img src={about} className="img-fluid" alt=""/>
+                <img src={about} className="img-fluid" alt="about-img"/>
                 
                 </div>
 

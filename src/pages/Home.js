@@ -48,7 +48,7 @@ function Home() {
 {/* first row */}
 <div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
-<a href="https://1q0mv.csb.app" target="_blank" rel="noreferrer">   <img src={wk3}  className="img-fluid" alt=""/> </a>
+<a href="https://barber-shop-envato.netlify.app" target="_blank" rel="noreferrer">   <img src={wk3}  className="img-fluid" alt="Barber-shop website"/> </a>
 
     <div className="card-body">
     <p className="text-lg-left card-title">Creating Website</p>
@@ -60,7 +60,7 @@ function Home() {
 
 {/* second row */}
 <div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
-    <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="img-fluid" alt=""/> </a>
+    <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="img-fluid" alt="leisure-lawn website"/> </a>
 
     <div className="card-body">
     <p className="text-lg-left card-title">Creating Website for Leisure Lawn Business</p>
@@ -71,7 +71,7 @@ function Home() {
 
 {/* Third row */}
 <div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
-<a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="img-fluid" alt=""/> </a>
+<a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="img-fluid" alt="mobile toilet systems"/> </a>
 <div className="card-body">
     <p className="text-lg-left card-title">Creating a portable toilet system website</p>
 

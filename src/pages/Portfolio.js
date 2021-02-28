@@ -17,7 +17,7 @@ function Portfolio() {
 {/* first row */}
 <div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
-<a href="https://barber-shop-envato.netlify.app" target="_blank" rel="noreferrer" >   <img src={wk3}  className="card-img-top" alt="" sytle={{width:"500px", height:"350px"}} /> </a>
+<a href="https://barber-shop-envato.netlify.app" target="_blank" rel="noreferrer" >   <img src={wk3}  className="card-img-top" alt="Barber-shop website" sytle={{width:"500px", height:"350px"}} /> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website</h6>
@@ -29,7 +29,7 @@ function Portfolio() {
 
 {/* second row */}
 <div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
-    <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="card-img-top" alt=""/> </a>
+    <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="card-img-top" alt="leisure-lawn website"/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website for Leisure Lawn Business</h6>
@@ -40,7 +40,7 @@ function Portfolio() {
 
 {/* Third row */}
 <div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
-<a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="card-img-top" alt=""/> </a>
+<a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="card-img-top" alt="mobile toilet systems"/> </a>
 <div className="card-body">
     <h6 className="text-lg-left">Creating a portable toilet system website</h6>
 
@@ -51,7 +51,7 @@ function Portfolio() {
 {/* Forth row */}
 <div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
 
-<a href="https://mobilescreen.netlify.app" target="_blank" rel="noreferrer">   <img src={wk4}  className="card-img-top" alt=""/> </a>
+<a href="https://mobilescreen.netlify.app" target="_blank" rel="noreferrer">   <img src={wk4}  className="card-img-top" alt="Little viewport"/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating Website</h6>
@@ -65,7 +65,7 @@ function Portfolio() {
 {/* Fifth row */}
 <div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
-<a href="https://platinumhotels.netlify.app/" target="_blank" rel="noreferrer">   <img src={wk5}  className="card-img-top" alt=""/> </a>
+<a href="https://platinumhotels.netlify.app/" target="_blank" rel="noreferrer">   <img src={wk5}  className="card-img-top" alt="Platinum Hotel"/> </a>
 
     <div className="card-body">
     <h6 className="text-lg-left">Creating a hotel Website</h6>
