@@ -14,27 +14,21 @@ function Contact() {
             </div>
 
 
-<div className="col-lg-6">
-             <form id="contact-form" className="text-left shadow py-5 px-5" method="POST">
-    <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input type="text" className="form-control" />
-    </div>
-    <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control" aria-describedby="emailHelp" />
-    </div>
-    <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <textarea className="form-control" rows="5"></textarea>
-    </div>
-    <button type="submit" className="btn buttonBg">Submit</button>
-</form>
-</div>
+<div className="col-lg-12">
 
-<div className="col-lg-6  d-md-flex justify-content-md-center">
+    <div className="justify-content-center d-inline-flex">
+    <div className="mt-2 mx-3">
+    <button className="btn btn-dark my-3 form-control reachme"><a href="mailto:paulabakada@gmail.com">E-Mail Me</a></button>
+    </div>
+         
+    <div className="mt-2 mx-3">
+    <button className="btn btn-dark my-3 form-control reachme"><a href="tel:08125157424">Call Me</a></button>
+    </div>
+    </div>
+
+
  
-<div className="text-left text-dark align-items-center mx-4 text-lg-left text-md-left text-sm-center">
+<div className="text-center text-dark align-items-center mx-4 text-center">
 <div className="py-1 my-3"><a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
 <div className="py-1 my-3"><a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
 <div className="py-1 my-3"><a href="https://www.instagram.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark"> <FaInstagram /> Follow me on Instagram </a>  </div>
