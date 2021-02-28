@@ -320,7 +320,6 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   border: none;
   outline: none;
   color: #fff;
-  background: #0255C2;
   cursor: pointer;
   position: relative;
   z-index: 0;
