@@ -11,8 +11,9 @@ function Contact() {
             
              <div className="text-center">
             <h5 className="my-5">Thanks for taking the time to reach out. How can I help you today?</h5>
-            </div>
+                 </div>
 
+             
 
 <div className="container d-flex align-items-center justify-content-center">
 
@@ -25,6 +26,8 @@ function Contact() {
  
 </ul>
 
+
+<h5 className="mt-5 bg-warning px-4 py-3">Social Media</h5>
  
 <div className="py-1 my-3"><a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
 <div className="py-1 my-3"><a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
