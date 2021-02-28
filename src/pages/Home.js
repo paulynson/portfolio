@@ -25,10 +25,10 @@ function Home() {
 
             <div className="d-flex align-items-center">
                 <div className="container text-center">
-                    <h1 className="text-dark font-weight-bold p-2">I'll make your Website Responsive and Beautiful</h1>
-                <p className="text-dark text-lg-center mt-4">I  Develop Websites & also Design (Graphics, Websites & UI Design)</p>
+                    <h1 className="text-dark font-weight-bold p-2" data-aos="fade-up" data-aos-duration="1000">I'll make your Website Responsive and Beautiful</h1>
+                <p className="text-dark text-lg-center mt-4" data-aos="fade-right" data-aos-duration="1000">I  Develop Websites & also Design (Graphics, Websites & UI Design)</p>
 
-                <div className="mt-4">
+                <div className="mt-4" data-aos="fade-down" data-aos-duration="1000">
 
                 <Link to="/portfolio" className=" btn btn-dark"> Portfolio </Link> 
                 </div>
@@ -40,13 +40,13 @@ function Home() {
             </div>
 
 <div className="container my-5">
-    <h6 className="font-weight-bold">SOME OF MY LATEST WORK</h6>
+    <h6 className="font-weight-bold" data-aos="fade-up" data-aos-duration="1000">SOME OF MY LATEST WORK</h6>
     <hr/>
 
     <div className="card-deck container">
 
 {/* first row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
 <a href="https://1q0mv.csb.app" target="_blank" rel="noreferrer">   <img src={wk3}  className="img-fluid" alt=""/> </a>
 
@@ -59,7 +59,7 @@ function Home() {
 </div>
 
 {/* second row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
     <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="img-fluid" alt=""/> </a>
 
     <div className="card-body">
@@ -70,7 +70,7 @@ function Home() {
 </div>
 
 {/* Third row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 <a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="img-fluid" alt=""/> </a>
 <div className="card-body">
     <p className="text-lg-left card-title">Creating a portable toilet system website</p>

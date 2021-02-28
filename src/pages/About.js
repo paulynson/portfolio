@@ -7,18 +7,18 @@ function About() {
     return (
         <div>
             
-            <div className="bg-light my-5 py-5 px-5 ">
+            <div className="bg-light my-5 py-5 px-5">
            
             <div className="row d-flex">
                 <div className="container col-lg-4 text-lg-left order-sm-2 order-md-2 order-lg-1">
-                    <h2 className="text-dark font-weight-bolder mt-md-5 mt-sm-5">About me</h2>
-                    <h5 className="">I'm a Frontend Developer and a UI designer based in Lagos State, Nigeria.</h5>
-                <small><p className="text-muted text-lg-left mt-4">I love solving complex problems that gives me more idea turning it to something beautiful and eye catching which also gives me the innovation to work with pixels as a great tool of beauty. When I'm not coding, I love playing football or video games.</p></small>
+                    <h2 className="text-dark font-weight-bolder mt-md-5 mt-sm-5" data-aos="fade-down" data-aos-duration="1000">About me</h2>
+                    <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">I'm a Frontend Developer and a UI designer based in Lagos State, Nigeria.</h5>
+                <small><p className="text-muted text-lg-left mt-4" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">I love solving complex problems that gives me more idea turning it to something beautiful and eye catching which also gives me the innovation to work with pixels as a great tool of beauty. When I'm not coding, I love playing football or video games.</p></small>
                 {/* <code>I use this for practice</code> */}
                
                 </div>
 
-                <div className="col-lg-6 text-center order-sm-1 order-md-1 order-lg-2">
+                <div className="col-lg-6 text-center order-sm-1 order-md-1 order-lg-2" data-aos="fade-up" data-aos-duration="1000">
                 <img src={about} className="img-fluid" alt=""/>
                 
                 </div>
@@ -39,13 +39,13 @@ function About() {
 
             <div className="row">
 
-<div className="col-lg-6">
+<div className="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
     <div className="shadow py-5 px-5">
-    <h3 className="text-center font-weight-bold">Front-end Developer</h3>
-    <p className="text-center mt-3">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+    <h3 className="text-center font-weight-bold" data-aos="fade-right" data-aos-duration="1000">Front-end Developer</h3>
+    <p className="text-center mt-3" data-aos="fade-right" data-aos-duration="1000">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
 
-    <h4 className="text-primary mt-5">Languages I Speak:</h4>
-    HTML, JavaScript, Bootstrap, CSS, React Js
+    <h4 className="text-primary mt-5" data-aos="fade-up" data-aos-duration="1000">Languages I Speak:</h4>
+    <p data-aos="fade-right" data-aos-duration="1000"> HTML, JavaScript, Bootstrap, CSS, React Js </p>
 
     <h4 className="text-primary mt-5">Dev Tools:</h4>
     <ul className="list-group">
@@ -64,13 +64,13 @@ function About() {
 
 {/* Design Aspect */}
 
-<div className="col-lg-6">
+<div className="col-lg-6" data-aos="fade-down" data-aos-duration="1000">
 <div className="shadow py-5 px-5">
-    <h3 className="text-center font-weight-bold">Designer</h3>
-    <p className="text-center mt-3">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+    <h3 className="text-center font-weight-bold" data-aos="fade-right" data-aos-duration="1000">Designer</h3>
+    <p className="text-center mt-3" data-aos="fade-right" data-aos-duration="1000">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
 
-    <h4 className="text-primary mt-5">Things I enjoy designing:</h4>
-   <p> UI, Web, Mobile, Apps, Logos </p>
+    <h4 className="text-primary mt-5" data-aos="fade-down" data-aos-duration="1000">Things I enjoy designing:</h4>
+   <p data-aos="fade-up" data-aos-duration="1000"> UI, Web, Mobile, Apps, Logos </p>
 
     <h4 className="text-primary mt-5">Design Tools:</h4>
     <ul className="list-group">

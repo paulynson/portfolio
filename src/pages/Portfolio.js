@@ -9,13 +9,13 @@ function Portfolio() {
     return (
         <div>
       <div className="container my-5 p-5">
-    <h5 className="font-weight-bold my-5">MY LATEST WORK</h5>
+    <h5 className="font-weight-bold my-5" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">MY LATEST WORK</h5>
     <hr/>
 
     <div className="card-deck container mt-5">
 
 {/* first row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
 <a href="https://barber-shop-envato.netlify.app" target="_blank" rel="noreferrer" >   <img src={wk3}  className="card-img-top" alt="" sytle={{width:"500px", height:"350px"}} /> </a>
 
@@ -28,7 +28,7 @@ function Portfolio() {
 </div>
 
 {/* second row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
     <a href="http://leisure-lawn.com" target="_blank" rel="noreferrer">   <img src={wk1}  className="card-img-top" alt=""/> </a>
 
     <div className="card-body">
@@ -39,7 +39,7 @@ function Portfolio() {
 </div>
 
 {/* Third row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 <a href="http://mobiletoiletsystems.com.ng" target="_blank" rel="noreferrer">   <img src={wk2}  className="card-img-top" alt=""/> </a>
 <div className="card-body">
     <h6 className="text-lg-left">Creating a portable toilet system website</h6>
@@ -49,7 +49,7 @@ function Portfolio() {
 </div>
 
 {/* Forth row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-down" data-aos-duration="1000">
 
 <a href="https://mobilescreen.netlify.app" target="_blank" rel="noreferrer">   <img src={wk4}  className="card-img-top" alt=""/> </a>
 
@@ -63,7 +63,7 @@ function Portfolio() {
 </div>
 
 {/* Fifth row */}
-<div className="card shadow">
+<div className="card shadow" data-aos="fade-up" data-aos-duration="1000">
 
 <a href="https://platinumhotels.netlify.app/" target="_blank" rel="noreferrer">   <img src={wk5}  className="card-img-top" alt=""/> </a>
 
