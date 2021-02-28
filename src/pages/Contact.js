@@ -19,9 +19,9 @@ function Contact() {
     <div classname="col-lg-6 col-sm-12 col-md-12">
     
     <ul class="list-group list-group text-center align-items-center d-flex justify-content-center">
-  <a href="mailto:paulabakada@gmail.com" className="list-group-item text-dark reachme my-3">Email Me</a>
+  <a href="mailto:paulabakada@gmail.com" className="list-group-item bg-dark text-light reachme my-3">Email Me</a>
 
- <a href="tel:08125157424" className="list-group-item text-dark reachme my-3">Call Me</a>
+ <a href="tel:08125157424" className="list-group-item bg-dark text-light reachme my-3">Call Me</a>
  
 </ul>
 
