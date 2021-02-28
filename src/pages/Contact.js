@@ -7,28 +7,25 @@ import { FaGithub } from "react-icons/fa";
 function Contact() {
     return (
         <div>
-             <div className=" p-2 my-5 d-flex justify-content-center align-items-center text-center">
-             <div className="row container">
-             <div className="d-flex justify-content-center container">
+             <div className=" p-2 my-5  text-center container">
+            
+             <div className="text-center">
             <h5 className="my-5">Thanks for taking the time to reach out. How can I help you today?</h5>
             </div>
 
 
-<div className="col-lg-12">
+<div className="container d-flex align-items-center justify-content-center">
 
-    <div className="justify-content-center d-inline-flex flex-sm-column flex-md-column flex-lg-column">
-    <div className="mt-2 mx-3">
-    <a href="mailto:paulabakada@gmail.com" className="btn btn-dark my-3 form-control reachme">E-Mail</a>
-    </div>
-         
-    <div className="mt-2 mx-3">
-    <a href="tel:08125157424" className="btn btn-dark my-3 form-control reachme">Call</a>
-    </div>
-    </div>
+    <div classname="col-lg-6 col-sm-12 col-md-12">
+    
+    <ul class="list-group list-group text-center align-items-center d-flex justify-content-center">
+  <a href="mailto:paulabakada@gmail.com" className="list-group-item text-dark reachme my-3">Email Me</a>
 
+ <a href="tel:08125157424" className="list-group-item text-dark reachme my-3">Call Me</a>
+ 
+</ul>
 
  
-<div className="text-center text-dark align-items-center mx-4 text-center">
 <div className="py-1 my-3"><a href="https://www.facebook.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaFacebook /> Like me on Facebook </a> </div>
 <div className="py-1 my-3"><a href="https://twitter.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark "> <FaTwitter /> Follow me on Twitter </a> </div>
 <div className="py-1 my-3"><a href="https://www.instagram.com/Abakadapaul/" target="-blank" rel="noreferrer" className="text-dark"> <FaInstagram /> Follow me on Instagram </a>  </div>
@@ -39,7 +36,7 @@ function Contact() {
 
 </div>
 
-</div>
+
 
 </div>
 
