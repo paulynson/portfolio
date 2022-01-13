@@ -279,9 +279,8 @@ function Home() {
             or partnership opportunities.
           </h6>
           <Link
-            className="nav-link my-2"
+            className="my-2 btn btn-outline-dark"
             to="/contact"
-            className="btn btn-outline-dark"
           >
             Start a Conversation
           </Link>
