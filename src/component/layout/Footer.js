@@ -6,6 +6,9 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 
 function Footer() {
+  const date = new Date();
+const tDate = date.getFullYear();
+
   return (
     <div>
       <footer class="footer mt-auto py-3 navbar-dark bg-darken">
@@ -21,7 +24,7 @@ function Footer() {
             className="text-white px-3"
           >
             {' '}
-            <FaFacebook />{' '}
+            <FaFacebook className='icon-link' />{' '}
           </a>
           <a
             href="https://twitter.com/Abakadapaul/"
@@ -30,7 +33,7 @@ function Footer() {
             className="text-white px-3"
           >
             {' '}
-            <FaTwitter />{' '}
+            <FaTwitter className='icon-link' />{' '}
           </a>
           <a
             href="https://instagram.com/Abakadapaul/"
@@ -39,7 +42,7 @@ function Footer() {
             className="text-white px-3"
           >
             {' '}
-            <FaInstagram />{' '}
+            <FaInstagram className='icon-link' />{' '}
           </a>
           <a
             href="https://github.com/paulynson"
@@ -48,7 +51,7 @@ function Footer() {
             className="text-white px-3"
           >
             {' '}
-            <FaGithub />{' '}
+            <FaGithub className='icon-link' />{' '}
           </a>
         </div>
       </footer>
@@ -58,5 +61,3 @@ function Footer() {
 
 export default Footer;
 
-const date = new Date();
-const tDate = date.getFullYear();

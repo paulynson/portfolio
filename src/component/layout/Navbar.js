@@ -35,12 +35,7 @@ function Navbar() {
               <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
-              <Link className="nav-link" to="/portfolio">
-                Portfolio
-              </Link>
+           
               <Link className="nav-link" to="/contact">
                 Contact
               </Link>
@@ -54,7 +49,7 @@ function Navbar() {
                 className="text-white px-2"
               >
                 {' '}
-                <FaFacebook />{' '}
+                <FaFacebook className='icon-link' />{' '}
               </a>
               <a
                 href="https://twitter.com/Abakadapaul/"
@@ -63,7 +58,7 @@ function Navbar() {
                 className="text-white px-2"
               >
                 {' '}
-                <FaTwitter />{' '}
+                <FaTwitter className='icon-link' />{' '}
               </a>
               <a
                 href="https://instagram.com/Abakadapaul/"
@@ -72,7 +67,7 @@ function Navbar() {
                 className="text-white px-2"
               >
                 {' '}
-                <FaInstagram />{' '}
+                <FaInstagram className='icon-link' />{' '}
               </a>
               <a
                 href="https://github.com/paulynson"
@@ -81,7 +76,7 @@ function Navbar() {
                 className="text-white px-2"
               >
                 {' '}
-                <FaGithub />{' '}
+                <FaGithub className='icon-link' />{' '}
               </a>
             </div>
           </div>
