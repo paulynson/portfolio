@@ -8,7 +8,7 @@ function Home() {
   const workDetails = [
     {
       id: 1,
-      link: 'http://mobiletoiletsystems.com.ng',
+      link: 'https://mobiletoiletsystems.com.ng',
       pix: require('./images/wk1.PNG').default,
       work: 'Mobile Toilet Systems',
       tools: 'WORDPRESS',
@@ -53,7 +53,7 @@ function Home() {
 
     {
       id: 6,
-      link: 'http://leisure-lawn.com',
+      link: 'https://leisure-lawn.com',
       pix: require('./images/wk6.PNG').default,
       work: 'Leisure Lawn Business Website',
       tools: 'HTML5, CSS3, BOOTSTRAP, JAVASCRIPT',
