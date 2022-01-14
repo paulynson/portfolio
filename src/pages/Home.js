@@ -67,9 +67,12 @@ function Home() {
         <div className="design_two"></div>
 
         {/* <!-- this div class is for the animations --> */}
+        <div>
+
         <div class="div"></div>
         <div class="div1"></div>
         <div class="div2"></div>
+        </div>
         {/* <!-- end of the div animation --> */}
 
         <div className="d-flex align-items-center">

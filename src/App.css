@@ -290,15 +290,15 @@ transition: .3s ease-in-out;
   height: 25px;
   border-radius: 20px;
   color: #ffffff;
-  top: 80%;
+  top: 60%;
   transform: translateX(-50%);
-    position: absolute !important;
+  position: absolute !important;
   padding: 6px;
   background-color: rgba(0,0,0,0.9);
   transform: scale(1.2);
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
   animation-name: blink;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -309,7 +309,7 @@ display: none !important;
 }
 
 @keyframes blink {
-   100% {background-color:#cc2B5E;  bottom:25%; top:90%;}
+   100% {background-color:#cc2B5E;  bottom:55%; top:65%;}
 }
 
 
