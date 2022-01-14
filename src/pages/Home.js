@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import about from '../assets/images/about.png';
 import { FaArrowDown } from 'react-icons/fa';
 
+// import wk1 from "./images/wk1.PNG"
+
 function Home() {
+ 
   const workDetails = [
     {
       id: 1,
       link: 'http://mobiletoiletsystems.com.ng',
-      pix: '/static/media/wk2.d5b7ea9a.PNG',
+      pix: require ('./images/wk1.PNG').default,
       work: 'Mobile Toilet Systems',
       tools: 'WORDPRESS',
       info: 'Mobile Toilet Website',
@@ -17,7 +20,7 @@ function Home() {
     {
       id: 2,
       link: 'https://barber-shop-envato.netlify.app',
-      pix: '/static/media/wk3.7664d484.PNG',
+      pix: require ('./images/wk2.PNG').default,
       work: 'Barber Shop Website',
       tools: 'HTML5, CSS3, BOOTSTRAP',
       info: 'Barber-shop website',
@@ -26,7 +29,7 @@ function Home() {
     {
       id: 3,
       link: 'https://platinumhotels.netlify.app',
-      pix: '/static/media/wk5.a2b8e4c6.PNG',
+      pix: require ('./images/wk3.PNG').default,
       work: 'Platinum Hotel Website',
       tools: 'HTML5, CSS3, BOOTSTRAP, JAVASCRIPT',
       info: 'Platinum Hotel',
@@ -35,7 +38,7 @@ function Home() {
     {
       id: 4,
       link: 'https://doggy-villa.netlify.app/',
-      pix: '/static/media/wk6.e3e993ff.png',
+      pix: require ('./images/wk4.png').default,
       work: 'Dogg-Villa Care',
       tools: 'HTML5, CSS3, JAVASCRIPT',
       info: 'Dog Care Website',
@@ -44,7 +47,7 @@ function Home() {
     {
       id: 5,
       link: 'https://mobilescreen.netlify.app',
-      pix: '/static/media/wk4.82bfaec1.PNG',
+      pix: require ('./images/wk5.PNG').default,
       work: 'Mobile Viewport Design',
       tools: 'HTML5, CSS3, BOOTSTRAP, JAVASCRIPT',
       info: 'Mobile viewport',
@@ -53,7 +56,7 @@ function Home() {
     {
       id: 6,
       link: 'http://leisure-lawn.com',
-      pix: '/static/media/wk1.17a18401.PNG ',
+      pix: require ('./images/wk6.PNG').default,
       work: 'Leisure Lawn Business Website',
       tools: 'HTML5, CSS3, BOOTSTRAP, JAVASCRIPT',
       info: 'Leisure-Lawn Website',
@@ -61,7 +64,7 @@ function Home() {
   ];
   return (
     <div>
-      <div className="jumbotron heroImage shadow">
+      <nav className="jumbotron heroImage shadow">
         <div className="design"></div>
         <div className="design_two"></div>
 
@@ -99,12 +102,12 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
 
-      <div className="container my-5">
+      <main className="container my-5">
         {/* About Section */}
 
-        <div>
+        <section>
           <div className="bg-light my-5 py-5 px-5">
             <div className="row d-flex">
               <div className="container col-lg-4 text-lg-left order-sm-2 order-md-2 order-lg-1">
@@ -258,7 +261,7 @@ function Home() {
             </div>
           </div>
           <div className="text-center my-5 h-50" id="portfolio"></div>
-        </div>
+        </section>
 
         {/* About Section */}
 
@@ -335,7 +338,7 @@ function Home() {
           </div>
         </div>
         {/* mapping work done */}
-      </div>
+      </main>
     </div>
   );
 }
