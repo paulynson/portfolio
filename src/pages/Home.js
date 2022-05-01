@@ -8,22 +8,21 @@ function Home() {
   const workDetails = [
     {
       id: 1,
-      link: 'https://mobiletoiletsystems.com.ng',
-      pix: require('./images/wk1.PNG').default,
-      work: 'Mobile Toilet Systems',
-      tools: 'WORDPRESS',
-      info: 'Mobile Toilet Website',
+      link: 'https://randomnumbersgame.netlify.app/',
+      pix: require('./images/wk7.png').default,
+      work: 'Guess Random Number Game',
+      tools: 'HTML5, CSS3, JAVASCRIPT',
+      info: 'Guess the Random Number Game',
     },
-
     {
       id: 2,
-      link: 'https://barber-shop-envato.netlify.app',
-      pix: require('./images/wk2.PNG').default,
-      work: 'Barber Shop Website',
-      tools: 'HTML5, CSS3, BOOTSTRAP',
-      info: 'Barber-shop website',
+      link: 'https://moviehunts.vercel.app/',
+      pix: require('./images/wk8.png').default,
+      work: 'Movies App',
+      tools: 'React Js, TailwindCSS',
+      info: 'Movies App',
     },
-
+   
     {
       id: 3,
       link: 'https://platinumhotels.netlify.app',
@@ -59,6 +58,24 @@ function Home() {
       tools: 'HTML5, CSS3, BOOTSTRAP, JAVASCRIPT',
       info: 'Leisure-Lawn Website',
     },
+    {
+      id: 7,
+      link: 'https://mobiletoiletsystems.com.ng',
+      pix: require('./images/wk1.PNG').default,
+      work: 'Mobile Toilet Systems',
+      tools: 'WORDPRESS',
+      info: 'Mobile Toilet Website',
+    },
+
+    {
+      id: 8,
+      link: 'https://barber-shop-envato.netlify.app',
+      pix: require('./images/wk2.PNG').default,
+      work: 'Barber Shop Website',
+      tools: 'HTML5, CSS3, BOOTSTRAP',
+      info: 'Barber-shop website',
+    },
+ 
   ];
   return (
     <div>
@@ -85,7 +102,7 @@ function Home() {
               I'll make your Website Responsive and Beautiful
             </h1>
             <p
-              className="text-dark text-lg-center mt-4"
+              className="text-dark text-lg-center mt-4 font-weight-bold" 
               data-aos="fade-right"
               data-aos-duration="1000"
             >
