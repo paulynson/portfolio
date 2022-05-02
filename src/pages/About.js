@@ -56,7 +56,7 @@ function About() {
   return (
     <div>
       <section>
-        <div className="bg-light my-5 py-5 px-5">
+        <div className="bg-light my-5 py-5 px-5 gap">
           <div className="row d-flex">
             <div className="container col-lg-4 text-lg-left order-sm-2 order-md-2 order-lg-1">
               <h2
