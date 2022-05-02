@@ -40,8 +40,8 @@ h1 {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
 }
 
@@ -51,8 +51,8 @@ h1 {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
 }
 
