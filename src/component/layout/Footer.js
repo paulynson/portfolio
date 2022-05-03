@@ -11,9 +11,9 @@ const tDate = date.getFullYear();
 
   return (
     <div>
-      <footer class="footer mt-auto py-3 navbar-dark bg-darken">
-        <div class="container text-white">
-          <span class="text-muted">&copy; {tDate} Paul Abakada</span>
+      <footer className="footer mt-auto py-3 navbar-dark bg-darken">
+        <div className="container text-white">
+          <span className="text-muted">&copy; {tDate} Paul Abakada</span>
         </div>
 
         <div className="mt-3 d-flex justify-content-center text-white">

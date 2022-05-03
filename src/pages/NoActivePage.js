@@ -10,9 +10,9 @@ function NoActivePage() {
         <div className="text-dark p-5 mt-5 notFound bg-warning">
 
             {/* <!-- this div class is for the animations --> */}
-           <div class="div"></div>
-           <div class="div1"></div>
-           <div class="div2"></div>
+           <div className="div"></div>
+           <div className="div1"></div>
+           <div className="div2"></div>
     {/* <!-- end of the div animation --> */}
 
             <h1 className="text-center" data-aos="fade-right" data-aos-duration="1000">404</h1>

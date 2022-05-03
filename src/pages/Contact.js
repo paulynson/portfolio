@@ -20,8 +20,8 @@ function Contact() {
         </div>
 
         <div className="container d-flex align-items-center justify-content-center">
-          <div classname="col-lg-6 col-sm-12 col-md-12">
-            <ul class="list-group list-group text-center align-items-center d-flex justify-content-center">
+          <div className="col-lg-6 col-sm-12 col-md-12">
+            <ul className="list-group list-group text-center align-items-center d-flex justify-content-center">
               <a
                 href="mailto:paulabakada@gmail.com"
                 className="list-group-item bg-dark text-light reachme my-3"

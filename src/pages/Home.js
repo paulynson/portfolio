@@ -5,6 +5,7 @@ import About from './About';
 // import wk1 from "./images/wk1.PNG"
 
 function Home() {
+
   const workDetails = [
     {
       id: 1,
@@ -86,9 +87,9 @@ function Home() {
         {/* <!-- this div class is for the animations --> */}
         <div>
 
-        <div class="div"></div>
-        <div class="div1"></div>
-        <div class="div2"></div>
+        <div className="div"></div>
+        <div className="div1"></div>
+        <div className="div2"></div>
         </div>
         {/* <!-- end of the div animation --> */}
 
@@ -159,14 +160,14 @@ function Home() {
           </h6>
           <hr />
 
-          <div className="row container gap my-4">
+          <div className="row container center m-0 gap my-4">
             {workDetails.map((working) => (
               <div
                 className="col-lg-3 col-md-4 col-sm-6 col-12"
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="1000" key={working.id}
               >
-                <div key={working.id} className="shadow">
+                {/* <div key={working.id} className="shadow"> */}
                   <a
                     href={working.link}
                     target="_blank"
@@ -189,7 +190,7 @@ function Home() {
                       </p>
                     </div>
                   </a>
-                </div>
+                {/* </div> */}
               </div>
             ))}
           </div>

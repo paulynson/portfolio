@@ -28,31 +28,30 @@ function About() {
       id: 6,
       list: 'CodeSandBox',
     },
-    ];
-    
-    const desTools = [
-        {
-          id: 1,
-          list: 'Figma',
-        },
-        {
-          id: 2,
-          list: 'Adobe XD',
-        },
-        {
-          id: 3,
-          list: 'Adobe Photoshop',
-        },
-        {
-          id: 4,
-          list: 'CorelDraw',
-        },
-        {
-          id: 5,
-          list: 'VideoScribe',
-        },
-        
-      ];
+  ];
+
+  const desTools = [
+    {
+      id: 1,
+      list: 'Figma',
+    },
+    {
+      id: 2,
+      list: 'Adobe XD',
+    },
+    {
+      id: 3,
+      list: 'Adobe Photoshop',
+    },
+    {
+      id: 4,
+      list: 'CorelDraw',
+    },
+    {
+      id: 5,
+      list: 'VideoScribe',
+    },
+  ];
   return (
     <div>
       <section>
@@ -149,8 +148,10 @@ function About() {
 
                 <h4 className="text-primary mt-5">Dev Tools:</h4>
                 <ul className="list-group">
-                {devTools.map(devs => (
-                       <li className="list-group-item">{devs.list}</li>
+                  {devTools.map((devs) => (
+                    <div key={devs.id}>
+                      <li className="list-group-item">{devs.list}</li>
+                    </div>
                   ))}
                 </ul>
               </div>
@@ -194,8 +195,10 @@ function About() {
 
                 <h4 className="text-primary mt-5">Design Tools:</h4>
                 <ul className="list-group">
-                                  {desTools.map(designs => (
-                       <li className="list-group-item">{designs.list}</li>
+                  {desTools.map((designs) => (
+                    <span key={designs.id}>
+                      <li className="list-group-item">{designs.list}</li>
+                    </span>
                   ))}
                 </ul>
               </div>
