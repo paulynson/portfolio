@@ -1,4 +1,4 @@
-import wk1 from "../pages/images/wk1.png";
+// import wk1 from "../pages/images/wk1.png";
 import wk2 from "../pages/images/wk2.png";
 import wk3 from "../pages/images/wk3.png";
 import wk4 from "../pages/images/wk4.png";
@@ -9,14 +9,14 @@ import wk8 from "../pages/images/wk8.png";
 import wk9 from "../pages/images/wk9.png";
 
 const projects = [
-  {
-    id: 1,
-    link: "/",
-    pix: wk1,
-    title: "Admin Dashboard For Gym",
-    tools: "React Js, Chart Js, Redux, Node Js, Express Js, Mongo DB",
-    info: "This dashboard is to track payment, gym member session and analysis for the gym",
-  },
+  // {
+  //   id: 1,
+  //   link: "/",
+  //   pix: wk1,
+  //   title: "Admin Dashboard For Gym",
+  //   tools: "React Js, Chart Js, Redux, Node Js, Express Js, Mongo DB",
+  //   info: "This dashboard is to track payment, gym member session and analysis for the gym",
+  // },
   {
     id: 2,
     link: "https://minidictionary.vercel.app/",
