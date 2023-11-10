@@ -58,7 +58,7 @@ const projects = [
 
     title: "Leisure Lawn Website",
     tools: "HTML5, CSS3, BOOTSTRAP, JAVASCRIPT",
-    info: "Leisure-Lawn Website",
+    info: "Displaying of services and other information about leisure lawn.",
   },
   {
     id: 7,

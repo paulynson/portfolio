@@ -5,25 +5,17 @@ const Projects = () => {
     <div className="pt-16" id="portfolio">
       <section className="">
         <h2
-          className="text-3xl font-bold text-center mt-5"
+          className="text-3xl font-bold text-center mt-5 uppercase"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          PORTFOLIO
+          Projects
         </h2>
-
-        <h6
-          className="mt-3 text-center text-lg "
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
-          Some of my work
-        </h6>
 
         <div className=" grid grid-cols-12 gap-8 gap-y-8 py-12 px-6 lg:px-0 mx-auto max-w-screen-xl">
           {projects.map((project) => (
             <div
-              className="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12"
+              className="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12 shadow-xl px-4 rounded-lg py-6"
               data-aos="fade-up"
               data-aos-duration="1000"
               key={project.id}
@@ -33,15 +25,15 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="linkme hover:animate-pulse"
+                className="linkme hover:bg-opacity-20"
               >
                 {" "}
                 <img
                   src={project.pix}
-                  className="img-fluid"
-                  alt={project.info}
+                  className="rounded-sm shadow-xl "
+                  alt={project.title}
                 />{" "}
-                <div className="card-body">
+                <div className="my-4">
                   <p className="text-left text-gray-800 font-bold">
                     {project.title}
                   </p>
