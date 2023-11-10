@@ -3,5 +3,5 @@
   to = "/"
   status = 200
   [build]	
-    command = "yern build"
+    command = "yarn build"
     build = "build"
