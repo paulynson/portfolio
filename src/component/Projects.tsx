@@ -1,22 +1,22 @@
-// import wk1 from "../pages/images/wk1.png";
-import wk2 from "../pages/images/wk2.png";
-import wk3 from "../pages/images/wk3.png";
-import wk4 from "../pages/images/wk4.png";
-import wk5 from "../pages/images/wk5.png";
-import wk6 from "../pages/images/wk6.png";
-import wk7 from "../pages/images/wk7.png";
-import wk8 from "../pages/images/wk8.png";
-import wk9 from "../pages/images/wk9.png";
+import wk1 from "../../public/images/wk1.png";
+import wk2 from "../../public/images/wk2.png";
+import wk3 from "../../public/images/wk3.png";
+import wk4 from "../../public/images/wk4.png";
+import wk5 from "../../public/images/wk5.png";
+import wk6 from "../../public/images/wk6.png";
+import wk7 from "../../public/images/wk7.png";
+import wk8 from "../../public/images/wk8.png";
+import wk9 from "../../public/images/wk9.png";
 
 const projects = [
-  // {
-  //   id: 1,
-  //   link: "/",
-  //   pix: wk1,
-  //   title: "Admin Dashboard For Gym",
-  //   tools: "React Js, Chart Js, Redux, Node Js, Express Js, Mongo DB",
-  //   info: "This dashboard is to track payment, gym member session and analysis for the gym",
-  // },
+  {
+    id: 1,
+    link: "/",
+    pix: wk1,
+    title: "Admin Dashboard For Gym",
+    tools: "React Js, Chart Js, Redux, Node Js, Express Js, Mongo DB",
+    info: "This dashboard is to track payment, gym member session and analysis for the gym",
+  },
   {
     id: 2,
     link: "https://minidictionary.vercel.app/",
