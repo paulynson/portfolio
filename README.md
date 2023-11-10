@@ -1,7 +1,27 @@
-# Abakada Paul Portfolio
+# React + TypeScript + Vite
 
-<https://abakadapaul.netlify.app/>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![s1](https://user-images.githubusercontent.com/33938655/166167671-75b85195-98d0-4c39-8d3b-92389431e9bc.png)
+Currently, two official plugins are available:
 
-![s2](https://user-images.githubusercontent.com/33938655/166167674-4109ba1e-a155-4446-b310-5389504c8223.png)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
