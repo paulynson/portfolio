@@ -2,11 +2,20 @@
 import About from "./About";
 import Portfolios from "../component/Portfolios";
 import { FaArrowDown } from "react-icons/fa";
+import { Helmet } from "react-helmet";
+
 import Contact from "./Contact";
 
 const Homepage = () => {
   return (
     <div className="mx-auto max-w-screen-2xl ">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Home | About Paul Abakada | UI Designer &amp; Front End Developer
+        </title>
+        <link rel="canonical" href="https://abakadapaul.netlify.app/" />
+      </Helmet>
       <div>
         <nav className="relative heroImage shadow-lg ">
           <div className="design"></div>
