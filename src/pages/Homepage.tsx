@@ -1,7 +1,6 @@
 // import { Link } from "react-router-dom";
 import About from "./About";
 import Portfolios from "../component/Portfolios";
-
 import { FaArrowDown } from "react-icons/fa";
 import Contact from "./Contact";
 
