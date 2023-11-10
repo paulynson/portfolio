@@ -11,7 +11,7 @@ import wk9 from "../pages/images/wk9.png";
 const projects = [
   {
     id: 1,
-    link: "#",
+    link: "/",
     pix: wk1,
     title: "Admin Dashboard For Gym",
     tools: "React Js, Chart Js, Redux, Node Js, Express Js, Mongo DB",
