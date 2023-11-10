@@ -66,7 +66,7 @@ const projects = [
     pix: wk7,
     title: "Random Games",
     tools: "Javascript, HTML5, CSS",
-    info: "Mobile Toilet Website",
+    info: "A game of random numbers that allows you to guess a number and get teh result displayed immediately.",
   },
 
   {
