@@ -5,7 +5,7 @@ const Projects = () => {
     <div className="pt-16" id="portfolio">
       <section className="">
         <h2
-          className="text-3xl font-bold text-center mt-5 uppercase"
+          className="text-3xl font-bold text-center mt-5 uppercase dark:text-lime-500"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
@@ -15,7 +15,7 @@ const Projects = () => {
         <div className=" grid grid-cols-12 gap-8 gap-y-8 py-12 px-6 lg:px-0 mx-auto max-w-screen-xl">
           {projects.map((project) => (
             <div
-              className="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12 shadow-xl px-4 rounded-lg py-6"
+              className="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12 shadow-xl px-4 rounded-lg py-6 dark:bg-gray-800"
               data-aos="fade-up"
               data-aos-duration="1000"
               key={project.id}
@@ -34,14 +34,14 @@ const Projects = () => {
                   alt={project.title}
                 />{" "}
                 <div className="my-4">
-                  <p className="text-left text-gray-800 font-bold">
+                  <p className="text-left text-gray-800 font-bold dark:text-gray-100">
                     {project.title}
                   </p>
-                  <p className="text-left py-1 text-sm text-pink-500">
+                  <p className="text-left py-1 text-sm text-pink-500 dark:text-lime-200">
                     {project.info}
                   </p>
 
-                  <button className="text-left  text-md font-normal text-blue-400  ">
+                  <button className="text-left  text-md font-normal text-blue-400 dark:text-pink-300 ">
                     {project.tools}
                   </button>
                 </div>

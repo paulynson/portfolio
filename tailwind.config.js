@@ -5,6 +5,7 @@ import plugin from "tailwindcss/plugin";
 
 const tailwindConfig = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       textShadow: {

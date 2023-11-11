@@ -23,7 +23,7 @@ function NavListItem({ href, children }: NavListItemProps) {
     >
       <a
         href={href}
-        className="flex items-center hover:text-blue-500 transition-colors text-gray-800 text-lg"
+        className="flex items-center hover:text-blue-500 transition-colors dark:hover:text-lime-400 dark:text-gray-100 text-gray-800 text-lg"
       >
         {children}
       </a>
@@ -33,7 +33,7 @@ function NavListItem({ href, children }: NavListItemProps) {
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col  gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 flex flex-col  gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <NavListItem href="#portfolio">Projects</NavListItem>
       <NavListItem href="#about">About</NavListItem>
       <NavListItem href="#contact">Contact</NavListItem>
@@ -56,14 +56,14 @@ export function NavbarComponent() {
   }, []);
 
   return (
-    <header className="sticky max-w-screen-2xl w-full top-0 z-50">
-      <Navbar className="mx-auto max-w-screen-xl rounded-none shadow-2xl w-full border-none px-6 py-3 bg-white">
+    <header className="sticky w-full top-0 z-50">
+      <Navbar className="mx-auto max-w-screen-xl rounded-none shadow-2xl w-full border-none px-6 py-3 dark:text-gray-100 dark:bg-gray-700 bg-gray-50">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
             href="#"
             variant="h6"
-            className="mr-4 text-xl cursor-pointer py-1.5 text-purple-500 font-bold hover:animate-pulse"
+            className="mr-4 text-xl cursor-pointer py-1.5 text-purple-500 font-bold hover:animate-pulse dark:text-lime-300 dark:hover:text-lime-400"
           >
             Paul Abakada
           </Typography>
@@ -78,12 +78,12 @@ export function NavbarComponent() {
           >
             {openNav ? (
               <AiOutlineClose
-                className="h-6 w-6 text-black font-bold"
+                className="h-6 w-6 text-gray-800 font-bold dark:text-lime-300"
                 strokeWidth={2}
               />
             ) : (
               <HiOutlineMenu
-                className="h-6 w-6 text-black font-bold"
+                className="h-6 w-6 text-gray-800 font-bold dark:text-lime-300"
                 strokeWidth={2}
               />
             )}

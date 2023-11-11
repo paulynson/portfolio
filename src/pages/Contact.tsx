@@ -6,10 +6,10 @@ import { MdCall } from "react-icons/md";
 
 function Contact() {
   return (
-    <div className="mb-8 mx-auto max-w-screen-xl bg-gray-100 h-[60vh] flex justify-center items-center">
+    <div className="mb-8 mx-auto max-w-screen-xl  h-[60vh] flex justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg">
       <div className=" py-5 text-center" id="contact">
         <h2
-          className="text-gray-800 font-bold text-center text-3xl mb-8 uppercase"
+          className="text-gray-800 dark:text-lime-500 font-bold text-center text-3xl mb-8 uppercase"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
@@ -27,19 +27,19 @@ function Contact() {
             <div className=" text-center items-center flex justify-center gap-6 font-bold flex-wrap">
               <a
                 href="mailto:paulabakada@gmail.com"
-                className=" bg-white text-black flex items-center gap-1 border-2 border-gray-800 reachme group"
+                className=" bg-white dark:text-gray-800 dark:bg-lime-300 text-gray-800 flex items-center gap-1 border-2 border-gray-800 reachme group"
                 data-aos="fade-up"
               >
-                <BiSolidPencil className="text-black hidden group-hover:flex" />{" "}
+                <BiSolidPencil className="text-gray-800 hidden group-hover:flex" />{" "}
                 <span>Write to Me</span>{" "}
               </a>
 
               <a
                 href="tel:08125157424"
-                className=" bg-white group flex items-center gap-1 border-2 border-gray-800 text-black reachme "
+                className=" bg-white dark:bg-lime-300 dark:text-gray-800 group flex items-center gap-1 border-2 border-gray-800 text-gray-800 reachme "
                 data-aos="fade-down"
               >
-                <MdCall className="text-black hidden group-hover:flex" />
+                <MdCall className="text-gray-800 hidden group-hover:flex" />
                 <span> Schedule Call</span>{" "}
               </a>
             </div>
