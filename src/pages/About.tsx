@@ -65,8 +65,8 @@ function About() {
                   data-aos-duration="1000"
                   className="mb-5 text-center"
                 >
-                  I'm a Frontend Developer and a UI designer based in Lagos
-                  State, Nigeria.
+                  Hi! I&apos;m a Frontend Developer and UI Designer based in
+                  Lagos State, Nigeria.
                 </p>
 
                 <p
@@ -74,11 +74,10 @@ function About() {
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
-                  I love solving complex problems that gives me more idea
-                  turning it to something beautiful and eye catching which also
-                  gives me the innovation to work with pixels as a great tool of
-                  beauty. When I'm not coding, I love playing football or video
-                  games.
+                  I really love tackling tricky problems and turning them into
+                  things that look awesome. I'm super into making stuff look
+                  great using pixels - it's like a cool tool for making things
+                  beautiful.
                 </p>
 
                 <p
@@ -86,9 +85,25 @@ function About() {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  Interested in collaborating or investing? I'm always open to
-                  discussing Web Development, Product Design, work or
-                  partnership opportunities.
+                  When I'm not coding, you'll find me making research outside
+                  the coding environment or playing video games. It's my way of
+                  taking a break from the busy world of tech.
+                </p>
+                <p
+                  className="mb-6 block"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  If you're interested in working together or investing, I'm all
+                  ears for talking about Web Development, Product Design, or any
+                  cool projects. Don't hesitate to reach out.
+                </p>
+                <p
+                  className="mb-6 block"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  I'm always up for a friendly chat about work opportunities!
                 </p>
                 <div className="mt-8">
                   <a
