@@ -3,5 +3,5 @@
   to = "/"
   status = 200
   [build]	
-    command = "yarn build"
+    command = "npm build"
     build = "build"
