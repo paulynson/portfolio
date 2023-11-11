@@ -48,7 +48,7 @@ const projects = [
     link: "https://xintcommerce.netlify.app/",
     pix: wk5,
     title: "Xint E-commerce",
-    tools: "React Js, Redux, Axios, TailwindCss",
+    tools: "React Js, Redux, Axios, TailwindCss, Firebase",
     info: "E-commerce platform",
   },
   {
