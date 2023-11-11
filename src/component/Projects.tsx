@@ -1,12 +1,12 @@
-import wk1 from "../../public/images/wk1.png";
-import wk2 from "../../public/images/wk2.png";
-import wk3 from "../../public/images/wk3.png";
-import wk4 from "../../public/images/wk4.png";
-import wk5 from "../../public/images/wk5.png";
-import wk6 from "../../public/images/wk6.png";
-import wk7 from "../../public/images/wk7.png";
-import wk8 from "../../public/images/wk8.png";
-import wk9 from "../../public/images/wk9.png";
+import wk1 from "/images/wk1.png";
+import wk2 from "/images/wk2.png";
+import wk3 from "/images/wk3.png";
+import wk4 from "/images/wk4.png";
+import wk5 from "/images/wk5.png";
+import wk6 from "/images/wk6.png";
+import wk7 from "/images/wk7.png";
+import wk8 from "/images/wk8.png";
+import wk9 from "/images/wk9.png";
 
 const projects = [
   {

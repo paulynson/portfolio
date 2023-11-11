@@ -57,7 +57,7 @@ export function NavbarComponent() {
 
   return (
     <header className="sticky max-w-screen-2xl w-full top-0 z-50">
-      <Navbar className="mx-auto max-w-screen-xl rounded-xl w-full border-none px-6 py-3 bg-white">
+      <Navbar className="mx-auto max-w-screen-xl rounded-none shadow-2xl w-full border-none px-6 py-3 bg-white">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
