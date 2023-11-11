@@ -6,7 +6,7 @@ import { MdCall } from "react-icons/md";
 
 function Contact() {
   return (
-    <div className="mb-8 mx-4 xl:mx-0 lg:mx-0 md:mx-0  h-[60vh] flex justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg">
+    <div className="mb-8 mx-4 xl:mx-0 lg:mx-0 md:mx-0  px-4 h-[75vh] flex justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg">
       <div className=" py-5 text-center" id="contact">
         <h2
           className="text-gray-800 dark:text-lime-500 font-bold text-center text-3xl mb-8 uppercase"

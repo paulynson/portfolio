@@ -112,7 +112,7 @@ function About() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <div className="shadow py-6 lg:px-12 px-6">
+            <div className="shadow py-6 lg:px-12 px-5">
               <h3
                 className="text-left text-xl font-bold"
                 data-aos="fade-right"
@@ -171,7 +171,7 @@ function About() {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            <div className="shadow py-6 lg:px-12 px-6">
+            <div className="shadow py-6 lg:px-12 px-5">
               <h3
                 className="text-left text-xl font-bold"
                 data-aos="fade-right"

@@ -12,7 +12,7 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div className=" grid grid-cols-12 gap-8 gap-y-8 py-12 px-6 lg:px-0 mx-auto max-w-screen-xl">
+        <div className=" grid grid-cols-12 gap-8 gap-y-8 py-12 px-4 lg:px-0 mx-auto max-w-screen-xl">
           {projects.map((project) => (
             <div
               className="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12 shadow-xl px-4 rounded-lg py-6 dark:bg-gray-800"
