@@ -3,18 +3,18 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Portfolios = () => {
   return (
-    <section className="py-32 bg-white" id="portfolio">
+    <section className="py-32 bg-white dark:bg-[#1b4444] transition-colors duration-500" id="portfolio">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-20">
-          <div className="text-[#A3F323] text-sm font-mono mb-4 tracking-wider">
+          <div className="text-[#A3F323] dark:text-[#A3F323] text-sm font-mono mb-4 tracking-wider">
             &gt; PROJECTS.showcase()
           </div>
-          <h2 className="text-6xl font-black text-black mb-6">
+          <h2 className="text-6xl font-black text-black dark:text-white mb-6">
             SELECTED
-            <span className="block text-[#A3F323]">WORKS</span>
+            <span className="block text-[#A3F323] dark:text-[#A3F323]">WORKS</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl">
+          <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl">
             A curated collection of projects spanning HR technology, eCommerce, LMS platforms, Food Tech, and SaaS products. 
             Each showcasing expertise in modern web development, mobile apps, and AI-powered solutions.
           </p>
@@ -25,7 +25,7 @@ const Portfolios = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="group relative bg-black text-white overflow-hidden hover:bg-[#A3F323] hover:text-black transition-all duration-500"
+              className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500"
             >
               {/* Project Number */}
               <div className="absolute top-4 sm:top-6 left-4 sm:left-6 text-4xl sm:text-6xl font-black opacity-10 group-hover:opacity-20 transition-opacity duration-500">
@@ -93,12 +93,12 @@ const Portfolios = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 sm:mt-20">
-          <div className="text-gray-400 text-xs sm:text-sm font-mono mb-4">
+          <div className="text-gray-400 dark:text-gray-300 text-xs sm:text-sm font-mono mb-4">
             INTERESTED_IN_COLLABORATION?
           </div>
           <a
             href="#contact"
-            className="inline-block bg-black text-white px-8 sm:px-12 py-3 sm:py-4 font-bold text-base sm:text-lg hover:bg-[#A3F323] hover:text-black transition-all duration-300"
+            className="inline-block bg-black dark:bg-black text-white dark:text-white px-8 sm:px-12 py-3 sm:py-4 font-bold text-base sm:text-lg hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-300"
           >
             LET'S WORK TOGETHER
           </a>
