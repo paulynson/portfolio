@@ -1,90 +1,86 @@
-// import { FaTwitter } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { BiSolidPencil } from "react-icons/bi";
-import { MdCall } from "react-icons/md";
+import { FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
+  const contactInfo = [
+    {
+      icon: FaEnvelope,
+      label: "Email",
+      value: "paulabakada@gmail.com",
+      href: "mailto:paulabakada@gmail.com",
+    },
+    {
+      icon: FaPhone,
+      label: "Phone",
+      value: "+234 812 515 7424",
+      href: "tel:08125157424",
+    },
+    {
+      icon: FaMapMarkerAlt,
+      label: "Location",
+      value: "Lagos State, Nigeria",
+      href: "#",
+    }
+  ];
+
   return (
-    <div className="mb-8 mx-4 xl:mx-0 lg:mx-0 md:mx-0  px-4 h-[75vh] flex justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg">
-      <div className="py-5 text-center " id="contact">
-        <h2
-          className="mb-8 text-3xl font-bold text-center text-gray-800 uppercase dark:text-lime-500"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
-          Contact
-        </h2>
+    <section className="py-32 bg-black text-white" id="contact">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="mb-16">
+          <h2 className="text-6xl font-black mb-6">
+            Let's Build
+            <span className="block text-[#A3F323]">Something Great</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            With 3+ years of experience in HR tech, eCommerce, LMS, Food Tech, and SaaS products, 
+            plus expertise in AI systems development and job search automation,
+            I'm ready to help bring your next project to life with modern, intelligent solutions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+          {contactInfo.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <div key={index} className="group text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#A3F323] rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <IconComponent size={20} className="sm:text-2xl text-black" />
+                </div>
+                <p className="text-xs sm:text-sm font-medium text-gray-400 mb-2">
+                  {item.label}
+                </p>
+                {item.href !== "#" ? (
+                  <a
+                    href={item.href}
+                    className="text-white hover:text-[#A3F323] transition-colors duration-300 font-medium text-sm sm:text-base"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="text-white font-medium text-sm sm:text-base">{item.value}</p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="flex justify-center gap-4 sm:gap-6 mb-8 sm:mb-12">
+          <a
+            href="https://github.com/paulynson"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl flex items-center justify-center hover:bg-[#A3F323] hover:text-black transition-all duration-300 group"
+          >
+            <FaGithub size={20} className="sm:text-2xl group-hover:scale-110 transition-transform duration-300" />
+          </a>
+        </div>
 
         <div className="text-center">
-          <h5 className="my-5" data-aos="fade-right" data-aos-duration="1000">
-            Thanks for taking the time to reach out. How can I help you today?
-          </h5>
-        </div>
-
-        <div className="flex items-center justify-center px-6 ">
-          <div className="">
-            <div className="flex flex-wrap items-center justify-center gap-6 font-bold text-center ">
-              <a
-                href="mailto:paulabakada@gmail.com"
-                className="flex items-center gap-1 text-gray-800 bg-white border-2 border-gray-800 dark:text-gray-800 dark:bg-lime-300 reachme group"
-                data-aos="fade-up"
-              >
-                <BiSolidPencil className="hidden text-gray-800 group-hover:flex" />{" "}
-                <span>Write to Me</span>{" "}
-              </a>
-
-              <a
-                href="tel:08125157424"
-                className="flex items-center gap-1 text-gray-800 bg-white border-2 border-gray-800 dark:bg-lime-300 dark:text-gray-800 group reachme"
-                data-aos="fade-down"
-              >
-                <MdCall className="hidden text-gray-800 group-hover:flex" />
-                <span> Schedule Call</span>{" "}
-              </a>
-            </div>
-
-            <div className="flex flex-wrap items-center justify-center gap-6 my-8">
-              {/* <a
-                href="https://twitter.com/codefraction__/"
-                target="-blank"
-                rel="noreferrer"
-                className="flex items-center justify-center gap-2 hover:text-blue-500 group"
-              >
-                {" "}
-                <FaTwitter className="group-hover:animate-ping" />{" "}
-                <span className="" data-aos="fade-down">
-                  Follow me on Twitter{" "}
-                </span>
-              </a> */}
-              {/* <a
-                href="https://www.instagram.com/Abakadapaul/"
-                target="-blank"
-                rel="noreferrer"
-                className="flex items-center justify-center gap-2 hover:text-pink-500 group"
-              >
-                <FaInstagram className="group-hover:animate-ping" />{" "}
-                <span className="" data-aos="fade-up">
-                  Follow me on Instagram
-                </span>{" "}
-              </a> */}
-              <a
-                href="https://github.com/paulynson"
-                className="flex items-center justify-center gap-2 hover:text-lime-500 group"
-                target="-blank"
-                rel="noreferrer"
-              >
-                {" "}
-                <FaGithub className="group-hover:animate-ping" />{" "}
-                <span className="" data-aos="fade-down">
-                  Connect on GitHub{" "}
-                </span>
-              </a>
-            </div>
-          </div>
+          <p className="text-gray-400 text-sm">
+            © 2024 Paul Abakada. Crafted with passion.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

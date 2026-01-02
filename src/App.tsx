@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import "./App.css";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -7,20 +6,13 @@ import Footer from "./component/layout/Footer";
 import { Helmet } from "react-helmet";
 import Homepage from "./pages/Homepage";
 import NoActivePage from "./pages/NoActivePage";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { BsSun } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
 function App() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   const [theme, setTheme] = useState(() => {
-    // Use a callback function to retrieve the theme from localStorage
     const storedTheme = localStorage.getItem("theme");
-    return storedTheme || "light"; // Default to 'light' if no theme is stored
+    return storedTheme || "light";
   });
 
   const element = document.documentElement;
