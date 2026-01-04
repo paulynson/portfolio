@@ -59,65 +59,163 @@ function About() {
           </h2>
         </div>
 
-        {/* Mobile: Vertical Card Layout */}
+        {/* Mobile: Complete Content Layout */}
         <div className="block mb-12 space-y-8 sm:hidden">
-          {/* Mobile Profile Card */}
-          <div className="bg-gray-900 dark:bg-black/50 rounded-2xl p-6 border border-[#A3F323] dark:border-[#A3F323]">
-            <div className="flex items-center mb-4 space-x-4">
-              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#A3F323] dark:border-[#A3F323]">
+          {/* Mobile Profile Section */}
+          <div className="text-center">
+            <div className="relative inline-block mb-6">
+              <div className="w-48 h-48 mx-auto">
                 <img
                   src={about}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full filter grayscale"
                   alt="Paul Abakada"
                 />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-[#A3F323] dark:text-[#A3F323]">
-                  Paul Abakada
-                </h3>
-                <p className="text-sm text-gray-300 dark:text-gray-200">
-                  Frontend & Mobile Dev
-                </p>
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 border-4 border-[#A3F323] dark:border-[#A3F323]"></div>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-gray-200 dark:text-gray-100">
-              3+ years building modern applications across HR tech, eCommerce,
-              LMS, Food Tech, and SaaS. Specialized in React ecosystem, AI
-              systems, and SEO optimization.
+          </div>
+
+          {/* Mobile About Content */}
+          <div className="space-y-6 text-sm leading-relaxed text-gray-200 dark:text-gray-100">
+            <p>
+              <span className="text-[#A3F323] dark:text-[#A3F323] font-mono text-xs">
+                //
+              </span>{" "}
+              I'm a{" "}
+              <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
+                Frontend & Mobile Developer
+              </span>{" "}
+              with{" "}
+              <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
+                3+ years
+              </span>{" "}
+              of hands-on experience building modern, user-focused applications.
+            </p>
+            <p>
+              I specialize in{" "}
+              <span className="text-[#A3F323] dark:text-[#A3F323] font-medium">
+                React, React Native, Next.js, TypeScript, Zustand, Redux Toolkit, and React Query
+              </span>
+              , with backend expertise in Node.js, Express, and MongoDB. My work spans HR technology, eCommerce, LMS platforms, Food Tech, and SaaS products.
+            </p>
+            <p>
+              I've built core features like authentication systems, Google sign-in, subscriptions and payments, dashboards, and performance optimization. I've also implemented AI-based systems and assisted in building AI systems for job search and automation. I understand SEO principles and improve business visibility through optimized code. Beyond coding, I bring a product-minded approach to improve business processes and direction.
+            </p>
+            <p>
+              I hold professional certifications across tech and business fields, and I'm passionate about clean architecture, strong UI/UX, continuous learning, and exploring AI automation solutions.
             </p>
           </div>
 
-          {/* Mobile Skills Carousel */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-center text-white dark:text-white">
-              Core Skills
-            </h3>
-            <div className="flex pb-4 space-x-4 overflow-x-auto">
-              {[
-                "React.js",
-                "React Native",
-                "Next.js",
-                "TypeScript",
-                "AI Systems",
-                "SEO",
-              ].map((skill, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 bg-[#A3F323] dark:bg-[#A3F323] text-black dark:text-black px-4 py-2 rounded-full text-sm font-mono font-semibold"
-                >
-                  {skill}
+          {/* Mobile Skills Section */}
+          <div className="space-y-6">
+            {/* Frontend & Mobile */}
+            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+              <div className="mb-4">
+                <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
+                  01
                 </div>
-              ))}
+                <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
+                  FRONTEND & MOBILE
+                </h3>
+                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
+                  Building responsive web and mobile apps with modern frameworks and state management.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-1">
+                {skills.frontend.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                  >
+                    &gt; {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend */}
+            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+              <div className="mb-4">
+                <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
+                  02
+                </div>
+                <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
+                  BACKEND
+                </h3>
+                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
+                  Server-side development with Node.js and database management.
+                </p>
+              </div>
+              <div className="space-y-1">
+                {skills.backend.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                  >
+                    &gt; {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools */}
+            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+              <div className="mb-4">
+                <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
+                  03
+                </div>
+                <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
+                  TOOLS & DESIGN
+                </h3>
+                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
+                  Development tools and design software for complete project workflow.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-1">
+                {skills.tools.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                  >
+                    &gt; {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Expertise */}
+            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+              <div className="mb-4">
+                <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
+                  04
+                </div>
+                <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
+                  EXPERTISE
+                </h3>
+                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
+                  Specialized skills and advanced implementations across various domains.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 gap-1">
+                {skills.expertise.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                  >
+                    &gt; {skill}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Mobile CTA */}
-          <div className="text-center">
+          <div className="pt-4">
             <a
               href="#contact"
-              className="inline-block bg-[#A3F323] dark:bg-[#A3F323] text-black dark:text-black px-8 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg hover:bg-white dark:hover:bg-white"
+              className="block bg-[#A3F323] dark:bg-[#A3F323] text-black dark:text-black px-8 py-3 font-bold text-base transition-all duration-300 hover:bg-white dark:hover:bg-white text-center"
             >
-              LET'S WORK TOGETHER
+              LET'S COLLABORATE
             </a>
           </div>
         </div>

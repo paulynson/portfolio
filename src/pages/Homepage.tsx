@@ -248,7 +248,7 @@ const Homepage = () => {
       </Helmet>
 
       {/* Ultra Modern Hero Section */}
-      <section className="min-h-screen bg-black text-white relative overflow-hidden flex items-center px-4 sm:px-6">
+      <section className="min-h-screen bg-black dark:bg-[#1b4444] text-white dark:text-white relative overflow-hidden flex items-center px-4 sm:px-6 transition-colors duration-500">
         {/* Animated Background Grid */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
