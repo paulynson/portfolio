@@ -1,4 +1,4 @@
-import { FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function Contact() {
   const contactInfo = [
@@ -14,12 +14,12 @@ function Contact() {
       value: "+234 812 515 7424",
       href: "tel:08125157424",
     },
-    {
-      icon: FaMapMarkerAlt,
-      label: "Location",
-      value: "Lagos State, Nigeria",
-      href: "#",
-    },
+    // {
+    //   icon: FaMapMarkerAlt,
+    //   label: "Location",
+    //   value: "Lagos State, Nigeria",
+    //   href: "#",
+    // },
   ];
 
   return (
@@ -43,7 +43,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-3 sm:gap-8 sm:mb-16">
+        <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 sm:gap-8 sm:mb-16">
           {contactInfo.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -73,7 +73,6 @@ function Contact() {
             );
           })}
         </div>
-
         <div className="flex justify-center gap-4 mb-8 sm:gap-6 sm:mb-12">
           <a
             href="https://github.com/paulynson"
@@ -87,6 +86,7 @@ function Contact() {
             />
           </a>
         </div>
+
 
         <div className="text-center">
           <p className="text-sm text-gray-400 dark:text-gray-300">

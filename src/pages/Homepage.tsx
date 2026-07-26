@@ -242,7 +242,7 @@ const Homepage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Paul Abakada | Frontend & Mobile Developer | React, React Native, TypeScript
+          Paul Abakada | Software Engineer & Founder | React, React Native, TypeScript
         </title>
         <link rel="canonical" href="https://abakadapaul.netlify.app/" />
       </Helmet>
@@ -262,36 +262,37 @@ const Homepage = () => {
         </div>
 
         {/* Floating Elements - Hidden on mobile */}
-        <div className="absolute inset-0 overflow-hidden hidden sm:block">
+        <div className="absolute inset-0 hidden overflow-hidden sm:block">
           <div className="absolute top-20 left-20 w-2 h-2 bg-[#A3F323] rounded-full animate-pulse"></div>
           <div className="absolute top-40 right-32 w-1 h-1 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
           <div className="absolute top-1/3 right-20 w-1 h-1 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+        <div className="relative z-10 w-full px-4 mx-auto max-w-7xl sm:px-6">
           <div className="max-w-4xl">
             <div className="mb-6 sm:mb-8">
               <div className="text-[#A3F323] text-xs sm:text-sm font-mono mb-3 sm:mb-4 tracking-wider">
-                &gt; FRONTEND_DEVELOPER.initialize()
+                &gt; SOFTWARE_ENGINEER.initialize()
               </div>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none mb-4 sm:mb-6">
+              <h1 className="mb-4 text-4xl font-black leading-none sm:text-6xl md:text-7xl lg:text-8xl sm:mb-6">
                 PAUL
                 <span className="block text-[#A3F323] text-3xl sm:text-5xl md:text-6xl lg:text-7xl">ABAKADA</span>
               </h1>
-              <div className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-6 sm:mb-8 max-w-2xl">
-                <span className="text-[#A3F323]">//</span> Frontend & Mobile Developer with 3+ years
-                <span className="block">building modern, scalable applications.</span>
+              <div className="max-w-2xl mb-6 text-lg text-gray-400 sm:text-xl md:text-2xl sm:mb-8">
+                <span className="text-[#A3F323]">//</span> Software Engineer. Product Builder. Founder.
+                <span className="block">I design and ship web, mobile, and AI-powered products</span>
+                <span className="block">that solve real problems from idea to deployment.</span>
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:gap-6 mb-8 sm:mb-12">
+            <div className="flex gap-4 mb-8 flFvex-col sm:gap-6 sm:mb-12">
               <a
                 href="#portfolio"
                 className="group bg-[#A3F323] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-none font-bold text-base sm:text-lg hover:bg-white transition-all duration-300 flex items-center justify-center sm:justify-start gap-3 w-full sm:w-fit"
               >
                 <span>VIEW PROJECTS</span>
-                <FaArrowDown className="group-hover:translate-y-1 transition-transform duration-300" />
+                <FaArrowDown className="transition-transform duration-300 group-hover:translate-y-1" />
               </a>
               <a
                 href="#contact"
@@ -301,8 +302,8 @@ const Homepage = () => {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
-              <div className="text-gray-500 text-xs sm:text-sm font-mono">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-8">
+              <div className="font-mono text-xs text-gray-500 sm:text-sm">
                 CONNECT_WITH_ME:
               </div>
               <a
@@ -318,7 +319,7 @@ const Homepage = () => {
         </div>
 
         {/* Scroll Indicator - Hidden on mobile */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block">
+        <div className="absolute hidden transform -translate-x-1/2 bottom-8 left-1/2 sm:block">
           <div className="w-px h-16 bg-gradient-to-b from-[#A3F323] to-transparent"></div>
           <div className="text-[#A3F323] text-xs font-mono mt-2 rotate-90 origin-center whitespace-nowrap">
             SCROLL_DOWN

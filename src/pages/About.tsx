@@ -1,44 +1,43 @@
-import about from "../assets/images/about.png";
+import about from "../assets/images/Paul.png";
 
 function About() {
   const skills = {
     frontend: [
-      "React.js",
+      "React",
+      "Next.js",
       "React Native",
       "TypeScript",
       "JavaScript",
-      "Next.js",
+      "Tailwind CSS",
+      "Expo",
       "Redux Toolkit",
       "Zustand",
-      "React Query",
-      "Expo",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "SASS",
+      "TanStack Query",
     ],
-    backend: ["Node.js", "Express.js", "MongoDB"],
-    tools: [
-      "VS Code",
-      "Git & GitHub",
-      "Figma",
-      "Webflow",
-      "Adobe Photoshop",
-      "Netlify",
-      "Postman",
+    backend: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Stripe",
+      "Paystack",
+      "Flutterwave",
+      "AI APIs",
     ],
+    tools: ["Git & GitHub", "Docker", "Figma", "Postman", "Vercel / Netlify"],
     expertise: [
-      "Authentication Systems",
-      "Google Sign-in",
-      "Payment Integration",
-      "Subscriptions",
-      "Dashboards",
-      "Performance Optimization",
-      "Clean Architecture",
-      "UI/UX Design",
-      "AI Systems Development",
-      "Job Search Automation",
-      "SEO Optimization",
+      "SaaS Development",
+      "AI-powered Applications",
+      "Mobile Applications",
+      "Enterprise Dashboards",
+      "Authentication & Identity",
+      "Payment & Subscription Systems",
+      "API Integrations",
+      "Analytics & Reporting",
+      "Performance Optimisation",
+      "System Architecture",
+      "Technical SEO",
+      "Business Process Automation",
     ],
   };
 
@@ -51,7 +50,7 @@ function About() {
         {/* Section Header */}
         <div className="mb-12 sm:mb-20">
           <div className="text-[#A3F323] dark:text-[#A3F323] text-xs sm:text-sm font-mono mb-3 sm:mb-4 tracking-wider">
-            &gt; DEVELOPER.getInfo()
+            &gt; ENGINEER.getInfo()
           </div>
           <h2 className="mb-4 text-4xl font-black text-white sm:mb-6 sm:text-6xl dark:text-white">
             ABOUT
@@ -81,51 +80,70 @@ function About() {
               <span className="text-[#A3F323] dark:text-[#A3F323] font-mono text-xs">
                 //
               </span>{" "}
-              I'm a{" "}
+              I'm{" "}
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
-                Frontend & Mobile Developer
+                Paul Abakada
               </span>{" "}
-              with{" "}
+              , a Software Engineer, Product Builder, and Founder of{" "}
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
-                3+ years
-              </span>{" "}
-              of hands-on experience building modern, user-focused applications.
-            </p>
-            <p>
-              I specialize in{" "}
-              <span className="text-[#A3F323] dark:text-[#A3F323] font-medium">
-                React, React Native, Next.js, TypeScript, Zustand, Redux Toolkit, and React Query
+                Apisat Enterprises
               </span>
-              , with backend expertise in Node.js, Express, and MongoDB. My work spans HR technology, eCommerce, LMS platforms, Food Tech, and SaaS products.
+              . I build scalable web, mobile, and AI-powered applications that
+              solve real business problems.
             </p>
             <p>
-              I've built core features like authentication systems, Google sign-in, subscriptions and payments, dashboards, and performance optimization. I've also implemented AI-based systems and assisted in building AI systems for job search and automation. I understand SEO principles and improve business visibility through optimized code. Beyond coding, I bring a product-minded approach to improve business processes and direction.
+              My work spans the full product lifecycle - from architecture and
+              engineering to deployment and iteration. I've shipped products
+              across AI-powered recruitment platforms, Learning Management
+              Systems, FoodTech, SaaS applications, Chrome Extensions, analytics
+              dashboards, e-commerce solutions, and mobile apps. Each project
+              starts with understanding the business problem, not just the
+              technical brief.
             </p>
             <p>
-              I hold professional certifications across tech and business fields, and I'm passionate about clean architecture, strong UI/UX, continuous learning, and exploring AI automation solutions.
+              On the technical side, I work across the stack using{" "}
+              <span className="text-[#A3F323] dark:text-[#A3F323] font-medium">
+                React, React Native, Next.js, TypeScript, Node.js, Express, and
+                MongoDB
+              </span>
+              , with strong experience in state management, REST APIs, AI
+              integrations, Docker, and WordPress. I care deeply about
+              performance, accessibility, and writing code that teams can
+              maintain and build on.
+            </p>
+            <p>
+              What sets my approach apart is the combination of engineering
+              depth and business thinking. I don't just build features - I think
+              about why they exist, who they serve, and what outcome they need
+              to deliver. I'm continuously exploring AI, automation, and
+              emerging technologies to stay ahead of what's possible.
+            </p>
+            <p>
+              My mission is straightforward: build technology that helps
+              businesses grow and people work smarter.
             </p>
           </div>
 
           {/* Mobile Skills Section */}
           <div className="space-y-6">
             {/* Frontend & Mobile */}
-            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+            <div className="p-4 bg-gray-900 border border-gray-700 dark:border-gray-500 dark:bg-black/30">
               <div className="mb-4">
                 <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
                   01
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
-                  FRONTEND & MOBILE
+                  ENGINEERING
                 </h3>
-                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
-                  Building responsive web and mobile apps with modern frameworks and state management.
+                <p className="mb-3 text-xs text-gray-300 dark:text-gray-200">
+                  Core languages and frameworks used to build web and mobile products.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-1">
                 {skills.frontend.map((skill, index) => (
                   <div
                     key={index}
-                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -134,23 +152,23 @@ function About() {
             </div>
 
             {/* Backend */}
-            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+            <div className="p-4 bg-gray-900 border border-gray-700 dark:border-gray-500 dark:bg-black/30">
               <div className="mb-4">
                 <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
                   02
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
-                  BACKEND
+                  BACKEND & INTEGRATIONS
                 </h3>
-                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
-                  Server-side development with Node.js and database management.
+                <p className="mb-3 text-xs text-gray-300 dark:text-gray-200">
+                  Server-side development, databases, and third-party integrations.
                 </p>
               </div>
               <div className="space-y-1">
                 {skills.backend.map((skill, index) => (
                   <div
                     key={index}
-                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -159,23 +177,23 @@ function About() {
             </div>
 
             {/* Tools */}
-            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+            <div className="p-4 bg-gray-900 border border-gray-700 dark:border-gray-500 dark:bg-black/30">
               <div className="mb-4">
                 <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
                   03
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
-                  TOOLS & DESIGN
+                  TOOLS
                 </h3>
-                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
-                  Development tools and design software for complete project workflow.
+                <p className="mb-3 text-xs text-gray-300 dark:text-gray-200">
+                  Development and collaboration tools used across every project.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-1">
                 {skills.tools.map((skill, index) => (
                   <div
                     key={index}
-                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -184,23 +202,23 @@ function About() {
             </div>
 
             {/* Expertise */}
-            <div className="border border-gray-700 dark:border-gray-500 p-4 bg-gray-900 dark:bg-black/30">
+            <div className="p-4 bg-gray-900 border border-gray-700 dark:border-gray-500 dark:bg-black/30">
               <div className="mb-4">
                 <div className="text-[#A3F323] dark:text-[#A3F323] text-lg mb-2 font-bold">
                   04
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white dark:text-white">
-                  EXPERTISE
+                  CORE EXPERTISE
                 </h3>
-                <p className="text-xs text-gray-300 dark:text-gray-200 mb-3">
-                  Specialized skills and advanced implementations across various domains.
+                <p className="mb-3 text-xs text-gray-300 dark:text-gray-200">
+                  The kinds of products and business solutions I build.
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-1">
                 {skills.expertise.map((skill, index) => (
                   <div
                     key={index}
-                    className="text-xs font-mono text-gray-200 dark:text-gray-100"
+                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -243,40 +261,47 @@ function About() {
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-mono text-sm">
                   //
                 </span>{" "}
-                I'm a{" "}
+                I'm{" "}
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
-                  Frontend & Mobile Developer
+                  Paul Abakada,
                 </span>{" "}
+                a Software Engineer, Product Builder, and Founder of{" "}
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
-                  3+ years
-                </span>{" "}
-                of hands-on experience building modern, user-focused
-                applications.
-              </p>
-              <p>
-                I specialize in{" "}
-                <span className="text-[#A3F323] dark:text-[#A3F323] font-medium">
-                  React, React Native, Next.js, TypeScript, Zustand, Redux
-                  Toolkit, and React Query
+                  Apisat Enterprises
                 </span>
-                , with backend expertise in Node.js, Express, and MongoDB. My
-                work spans HR technology, eCommerce, LMS platforms, Food Tech,
-                and SaaS products.
+                . I build scalable web, mobile, and AI-powered applications that
+                solve real business problems.
               </p>
               <p>
-                I've built core features like authentication systems, Google
-                sign-in, subscriptions and payments, dashboards, and performance
-                optimization. I've also implemented AI-based systems and
-                assisted in building AI systems for job search and automation. I
-                understand SEO principles and improve business visibility
-                through optimized code. Beyond coding, I bring a product-minded
-                approach to improve business processes and direction.
+                My work spans the full product lifecycle, from architecture and
+                engineering to deployment and iteration. I've shipped products
+                across AI-powered recruitment platforms, Learning Management
+                Systems, FoodTech, SaaS applications, Chrome Extensions,
+                analytics dashboards, e-commerce solutions, and mobile apps.
+                Each project starts with understanding the business problem, not
+                just the technical brief.
               </p>
               <p>
-                I hold professional certifications across tech and business
-                fields, and I'm passionate about clean architecture, strong
-                UI/UX, continuous learning, and exploring AI automation
-                solutions.
+                On the technical side, I work across the stack using{" "}
+                <span className="text-[#A3F323] dark:text-[#A3F323] font-medium">
+                  React, React Native, Next.js, TypeScript, Node.js, Express,
+                  and MongoDB
+                </span>
+                , with strong experience in state management, REST APIs, AI
+                integrations, Docker, and WordPress. I care deeply about
+                performance, accessibility, and writing code that teams can
+                maintain and build on.
+              </p>
+              <p>
+                What sets my approach apart is the combination of engineering
+                depth and business thinking. I don't just build features. I
+                think about why they exist, who they serve, and what outcome
+                they need to deliver. I'm continuously exploring AI, automation,
+                and emerging technologies to stay ahead of what's possible.
+              </p>
+              <p>
+                My mission is straightforward: build technology that helps
+                businesses grow and people work smarter.
               </p>
             </div>
 
@@ -300,11 +325,10 @@ function About() {
                 01
               </div>
               <h3 className="mb-3 text-xl font-bold text-white sm:text-2xl sm:mb-4 dark:text-white">
-                FRONTEND & MOBILE
+                ENGINEERING
               </h3>
               <p className="text-sm text-gray-300 dark:text-gray-200">
-                Building responsive web and mobile apps with modern frameworks
-                and state management.
+                Core languages and frameworks used to build web and mobile products.
               </p>
             </div>
 
@@ -327,11 +351,10 @@ function About() {
                 02
               </div>
               <h3 className="mb-3 text-xl font-bold text-white sm:text-2xl sm:mb-4 dark:text-white">
-                BACKEND
+                BACKEND & INTEGRATIONS
               </h3>
               <p className="text-sm text-gray-300 dark:text-gray-200">
-                Server-side development with Node.js ecosystem and database
-                management.
+                Server-side development, databases, and third-party integrations.
               </p>
             </div>
 
@@ -354,11 +377,10 @@ function About() {
                 03
               </div>
               <h3 className="mb-3 text-xl font-bold text-white sm:text-2xl sm:mb-4 dark:text-white">
-                TOOLS & DESIGN
+                TOOLS
               </h3>
               <p className="text-sm text-gray-300 dark:text-gray-200">
-                Design and development tools for enhanced productivity and
-                workflow.
+                Development and collaboration tools used across every project.
               </p>
             </div>
 
@@ -381,11 +403,10 @@ function About() {
                 04
               </div>
               <h3 className="mb-3 text-xl font-bold text-white sm:text-2xl sm:mb-4 dark:text-white">
-                EXPERTISE
+                CORE EXPERTISE
               </h3>
               <p className="text-sm text-gray-300 dark:text-gray-200">
-                Specialized experience in complex features and business
-                solutions.
+                The kinds of products and business solutions I build.
               </p>
             </div>
 
