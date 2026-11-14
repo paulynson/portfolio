@@ -12,36 +12,10 @@ import { BsFillMoonFill } from "react-icons/bs";
 function App() {
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
-    return storedTheme || "light";
+    return storedTheme === "dark" ? "dark" : "light";
   });
 
   const element = document.documentElement;
-  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-  useEffect(() => {
-    function onWindowMatch() {
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) && darkQuery.matches)
-      ) {
-        element.classList.add("dark");
-      } else {
-        element.classList.remove("dark");
-      }
-    }
-
-    onWindowMatch(); // Initial setup
-
-    const mediaQueryListener = () => {
-      onWindowMatch();
-    };
-
-    darkQuery.addEventListener("change", mediaQueryListener);
-
-    return () => {
-      darkQuery.removeEventListener("change", mediaQueryListener);
-    };
-  }, [element, darkQuery]);
 
   useEffect(() => {
     switch (theme) {
@@ -76,6 +50,8 @@ function App() {
         <button
           className={`px-3 py-2 rounded text-sky-600 text-xl font-bold `}
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          aria-pressed={theme === "dark"}
         >
           {theme === "light" ? <BsSun /> : <BsFillMoonFill />}
         </button>

@@ -1,4 +1,13 @@
-const projects = [
+export interface PortfolioProject {
+  id: number;
+  link: string;
+  title: string;
+  category: string;
+  tools: string;
+  info: string;
+}
+
+const projects: PortfolioProject[] = [
   {
     id: 23,
     link: "https://trivogames.com",
@@ -28,7 +37,7 @@ const projects = [
     link: "#",
     title: "GetNextRole - AI Recruitment Platform",
     category: "SaaS",
-    tools: "React.Js 18, TypeScript, Tailwind CSS, TanStack Query, Node.js",
+    tools: "React 18, TypeScript, Tailwind CSS, TanStack Query, Node.js",
     info: "AI-powered platform helping job seekers streamline their job search with resume generation, cover letter generation, LinkedIn Easy Apply automation, and a job application tracker.",
   },
   {
@@ -36,7 +45,7 @@ const projects = [
     link: "#",
     title: "GetNextRole Chrome Extension",
     category: "Chrome Extension",
-    tools: "TypeScript, React, javaScript, Chrome APIs, RapidAPI",
+    tools: "TypeScript, React, JavaScript, Chrome APIs, RapidAPI",
     info: "Chrome extension that automates LinkedIn Easy Apply with AI-assisted workflows, auto-fill, and application tracking.",
   },
 
@@ -69,7 +78,7 @@ const projects = [
     link: "#",
     title: "Apisat Enterprises Website",
     category: "Corporate",
-    tools: "JavaScript, React js, TypeScript, Tailwind CSS",
+    tools: "JavaScript, React, TypeScript, Tailwind CSS",
     info: "Company website showcasing web development, mobile development, SEO, data analysis, company registration, and graphic design services.",
   },
   {
@@ -118,7 +127,7 @@ const projects = [
     link: "#",
     title: "CashLens",
     category: "FinTech",
-    tools: "React, TypeScript, Node.js, Express Js, Mongo DB, Tailwind CSS",
+    tools: "React, TypeScript, Node.js, Express.js, MongoDB, Tailwind CSS",
     info: "Financial tracking platform for knowing and tracking your account activity across the year, giving you a clear picture of your income, spending, and financial patterns over time.",
   },
   {
@@ -134,7 +143,7 @@ const projects = [
     link: "#",
     title: "Live LMS",
     category: "Education",
-    tools: "Next Js, TypeScript, Node.js, LiveKit, Tailwind CSS, Flutterwave",
+    tools: "Next.js, TypeScript, Node.js, LiveKit, Tailwind CSS, Flutterwave",
     info: "Full-featured LMS where tutors and students conduct live online classes via LiveKit-powered video lessons, with courses, quizzes, student progress tracking, and real-time collaboration.",
   },
   {
