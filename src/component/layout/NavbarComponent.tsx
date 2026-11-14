@@ -30,6 +30,11 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
       <NavListItem href="#portfolio" onClick={onNavigate}>PROJECTS</NavListItem>
       <NavListItem href="#about" onClick={onNavigate}>ABOUT</NavListItem>
       <NavListItem href="#contact" onClick={onNavigate}>CONTACT</NavListItem>
+      <li>
+        <a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" onClick={onNavigate}
+          className="inline-flex items-center justify-center border border-[#A3F323] px-4 py-2 font-mono text-sm font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black transition-colors duration-200"
+          aria-label="Download Paul Abakada CV as PDF">DOWNLOAD CV</a>
+      </li>
     </ul>
   );
 }
