@@ -84,11 +84,11 @@ function About() {
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                 Paul Abakada
               </span>{" "}
-              , a Software Engineer, Product Builder, and Founder of{" "}
+              , a Senior Frontend Engineer, Product Builder, and Founder of{" "}
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                 Apisat Enterprises
               </span>
-              . I build scalable web, mobile, and AI-powered applications that
+              . I build scalable web and mobile applications that
               solve real business problems.
             </p>
             <p>
@@ -265,11 +265,11 @@ function About() {
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                   Paul Abakada,
                 </span>{" "}
-                a Software Engineer, Product Builder, and Founder of{" "}
+                a Senior Frontend Engineer, Product Builder, and Founder of{" "}
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                   Apisat Enterprises
                 </span>
-                . I build scalable web, mobile, and AI-powered applications that
+                . I build scalable web and mobile applications that
                 solve real business problems.
               </p>
               <p>
