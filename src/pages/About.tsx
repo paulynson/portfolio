@@ -334,7 +334,7 @@ function About() {
             ))}
           </div>
         </div>
-        {/* Desktop Skills Section */
+        {/* Desktop Skills Section */}
         <div className="hidden grid-cols-1 gap-6 sm:grid md:grid-cols-2 lg:grid-cols-4 sm:gap-8">
           {/* Frontend & Mobile */}
           <div className="border border-gray-700 dark:border-gray-500 p-6 sm:p-8 hover:border-[#A3F323] dark:hover:border-[#A3F323] transition-colors duration-300 bg-gray-900 dark:bg-black/30">
