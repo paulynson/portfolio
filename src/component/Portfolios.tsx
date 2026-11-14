@@ -63,7 +63,8 @@ const Portfolios = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 transition-all duration-300 border border-current rounded-full hover:bg-current"
-                      title="View Live Site"
+                      title={`Visit ${project.title}`}
+                      aria-label={`Visit ${project.title} (opens in a new tab)`}
                     >
                       <FaExternalLinkAlt size={12} className="group-hover:text-black" />
                     </a>
@@ -78,7 +79,7 @@ const Portfolios = () => {
                 <div className="flex flex-wrap gap-2">
                   {project.tools.split(", ").slice(0, 4).map((tool, i) => (
                     <span
-                      key={i}
+                      key={`${project.id}-${tool}`}
                       className="px-2 py-1 font-mono text-xs border rounded-full sm:px-3 border-current/30"
                     >
                       {tool}
@@ -104,6 +105,8 @@ const Portfolios = () => {
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
             <button
               key={p}
+              aria-label={`Go to project page ${p}`}
+              aria-current={p === page ? "page" : undefined}
               onClick={() => { setPage(p); window.scrollTo({ top: document.getElementById("portfolio")?.offsetTop ?? 0, behavior: "smooth" }); }}
               className={`w-10 h-10 font-mono text-sm font-bold transition-all duration-300 border-2 ${
                 p === page
