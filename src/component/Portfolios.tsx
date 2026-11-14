@@ -132,7 +132,7 @@ const Portfolios = () => {
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
-                  {project.tools.split(", ").slice(0, 4).map((tool, i) => (
+                  {project.tools.split(", ").slice(0, 4).map((tool) => (
                     <span
                       key={`${project.id}-${tool}`}
                       className="px-2 py-1 font-mono text-xs border rounded-full sm:px-3 border-current/30"
@@ -179,9 +179,38 @@ const Portfolios = () => {
               <p className="mb-6 font-mono text-sm text-[#A3F323]">
                 {selectedProject.category}
               </p>
-              <p id="project-details-description" className="mb-8 leading-relaxed text-gray-200">
-                {selectedProject.info}
-              </p>
+              <div id="project-details-description" className="space-y-7">
+                <section>
+                  <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Project overview</h4>
+                  <p className="leading-relaxed text-gray-200">
+                    {selectedProject.caseStudy?.overview ?? selectedProject.info}
+                  </p>
+                </section>
+                {selectedProject.caseStudy && (
+                  <>
+                    <section>
+                      <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Key features</h4>
+                      <ul className="space-y-3 text-gray-200">
+                        {selectedProject.caseStudy.features.map((feature) => (
+                          <li key={feature} className="flex items-start gap-3 leading-relaxed">
+                            <span aria-hidden="true" className="mt-1 text-[#A3F323]">•</span>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                    <section>
+                      <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Technical implementation</h4>
+                      <p className="leading-relaxed text-gray-200">{selectedProject.caseStudy.engineering}</p>
+                    </section>
+                    <section>
+                      <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">What the project delivers</h4>
+                      <p className="leading-relaxed text-gray-200">{selectedProject.caseStudy.outcome}</p>
+                    </section>
+                  </>
+                )}
+              </div>
+              <div className="my-8 border-t border-white/20" />
               <h4 className="mb-3 text-sm font-bold uppercase tracking-wider">Technologies used</h4>
               <div className="flex flex-wrap gap-2">
                 {selectedProject.tools.split(", ").map((tool) => (
