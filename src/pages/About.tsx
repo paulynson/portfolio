@@ -1,6 +1,8 @@
 import about from "../assets/images/Paul.png";
 
 function About() {
+  const experience = [{"role":"Software Developer (Frontend)","company":"Chef4Me","period":"Nov 2024 - Oct 2026","detail":"Built marketplace journeys, integrated APIs and payments, and improved loading through code splitting."},{"role":"Frontend Developer","company":"Reposebay HR","period":"Apr 2024 - Jul 2024","detail":"Developed React and TypeScript dashboards for payroll, attendance and employee administration."},{"role":"Frontend Team Lead","company":"QrateArt","period":"May 2023 - May 2024","detail":"Led three frontend developers and reduced frontend bundle size by 20%."},{"role":"Frontend Developer","company":"Kev Solutions and Technology","period":"Jun 2022 - May 2023","detail":"Developed React interfaces for education, fintech and ecommerce projects with REST APIs and Redux Toolkit."}];
+
   const skills = {
     frontend: [
       "React",
@@ -227,6 +229,7 @@ function About() {
             </div>
           </div>
 
+          <div className="text-center"><a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" className="inline-block border-2 border-[#A3F323] px-6 py-3 text-center font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black">DOWNLOAD CV (PDF)</a></div>
           {/* Mobile CTA */}
           <div className="pt-4">
             <a
@@ -305,18 +308,33 @@ function About() {
               </p>
             </div>
 
-            <div className="pt-4 sm:pt-6">
+            <div className="pt-4 sm:pt-6 flex flex-wrap gap-4">
               <a
                 href="#contact"
                 className="inline-block bg-[#A3F323] dark:bg-[#A3F323] text-black dark:text-black px-6 sm:px-8 py-3 sm:py-4 font-bold text-base sm:text-lg hover:bg-white dark:hover:bg-white transition-all duration-300 w-full sm:w-auto text-center"
               >
                 LET'S COLLABORATE
               </a>
+              <a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" className="inline-block border-2 border-[#A3F323] px-6 py-3 text-center font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black">DOWNLOAD CV (PDF)</a>
             </div>
           </div>
         </div>
 
-        {/* Desktop Skills Section */}
+        <div className="mb-16 sm:mb-20">
+          <div className="mb-5 font-mono text-xs tracking-wider text-[#A3F323]">&gt; ENGINEER.experience()</div>
+          <h3 className="mb-8 text-2xl font-black text-white sm:text-4xl">PROFESSIONAL EXPERIENCE</h3>
+          <div className="grid gap-4 md:grid-cols-2">
+            {experience.map((job) => (
+              <article key={job.company} className="border border-gray-700 bg-gray-900 p-5 dark:border-gray-500 dark:bg-black/30 sm:p-6">
+                <p className="mb-2 font-mono text-xs text-[#A3F323]">{job.period}</p>
+                <h4 className="text-lg font-bold text-white">{job.role}</h4>
+                <p className="mb-3 text-sm font-semibold text-gray-200">{job.company}</p>
+                <p className="text-sm leading-relaxed text-gray-300">{job.detail}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+        {/* Desktop Skills Section */
         <div className="hidden grid-cols-1 gap-6 sm:grid md:grid-cols-2 lg:grid-cols-4 sm:gap-8">
           {/* Frontend & Mobile */}
           <div className="border border-gray-700 dark:border-gray-500 p-6 sm:p-8 hover:border-[#A3F323] dark:hover:border-[#A3F323] transition-colors duration-300 bg-gray-900 dark:bg-black/30">
