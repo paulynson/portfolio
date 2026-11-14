@@ -59,7 +59,7 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 5,
-    link: "#",
+    link: "https://www.apisatenterprises.com.ng/apps/marketlist",
     title: "Market List Mobile App",
     category: "React Native",
     tools: "React Native, Expo, NativeWind, TypeScript",
@@ -67,7 +67,7 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 6,
-    link: "#",
+    link: "https://qrateart.com/",
     title: "Qrate Art",
     category: "SaaS",
     tools: "React, TypeScript, Node.js, Tailwind CSS",
@@ -75,7 +75,7 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 10,
-    link: "#",
+    link: "https://www.apisatenterprises.com.ng/",
     title: "Apisat Enterprises Website",
     category: "Corporate",
     tools: "JavaScript, React, TypeScript, Tailwind CSS",
@@ -83,7 +83,7 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 11,
-    link: "#",
+    link: "https://www.stafflynkglobal.com/",
     title: "Talent Registration Portal",
     category: "Web App",
     tools: "WordPress, JavaScript, PHP",
@@ -116,7 +116,7 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 18,
-    link: "#",
+    link: "https://chromewebstore.google.com/detail/productitab/ojfjkhclfjkcdhfioliiefafoobbcphh",
     title: "ProductiTab - Smart Tab & Productivity Manager",
     category: "Chrome Extension",
     tools: "TypeScript, React, Chrome APIs, Tailwind CSS",
