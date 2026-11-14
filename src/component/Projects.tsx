@@ -5,6 +5,7 @@ export interface PortfolioProject {
   category: string;
   tools: string;
   info: string;
+  image?: string;
   caseStudy?: {
     overview: string;
     features: string[];
@@ -18,6 +19,7 @@ const projects: PortfolioProject[] = [
     id: 23,
     link: "https://trivogames.com",
     title: "TrivoGames",
+    image: "/project/trivogames.png",
     category: "Real-time Web & Mobile",
     tools: "Next.js, React Native, TypeScript, WebSockets",
     info: "Built multiplayer trivia experiences for web and mobile, including scheduled games, countdowns, synchronised sessions and real-time game updates.",
@@ -26,6 +28,7 @@ const projects: PortfolioProject[] = [
     id: 24,
     link: "#",
     title: "Chef4Me Marketplace",
+    image: "/project/chef4me.png",
     category: "Marketplace",
     tools: "Next.js, React, TypeScript, Stripe, Paystack",
     info: "Developed multi-role customer, chef and administration workflows, including quotations, bookings, checkout, payments and order tracking.",
@@ -46,6 +49,7 @@ const projects: PortfolioProject[] = [
     id: 25,
     link: "https://schoolers.academy",
     title: "Virtual School Platform",
+    image: "/project/schoolers.png",
     category: "Education",
     tools: "Next.js, TypeScript, LiveKit, React",
     info: "Developed student, tutor and parent interfaces and live classroom features with real-time audio and video controls.",
@@ -122,6 +126,7 @@ const projects: PortfolioProject[] = [
     id: 6,
     link: "https://qrateart.com/",
     title: "Qrate Art",
+    image: "/project/qrateart.png",
     category: "SaaS",
     tools: "React, TypeScript, Node.js, Tailwind CSS",
     info: "Platform bridging the gap between art supply vendors and elite artists. Features exhibitions, auctions, workshops, art supply marketplace, and an X-style social feed connecting artists directly to art Qraters.",
@@ -130,6 +135,7 @@ const projects: PortfolioProject[] = [
     id: 10,
     link: "https://www.apisatenterprises.com.ng/",
     title: "Apisat Enterprises Website",
+    image: "/project/apisatenterprises.png",
     category: "Corporate",
     tools: "JavaScript, React, TypeScript, Tailwind CSS",
     info: "Company website showcasing web development, mobile development, SEO, data analysis, company registration, and graphic design services.",
@@ -138,6 +144,7 @@ const projects: PortfolioProject[] = [
     id: 11,
     link: "https://www.stafflynkglobal.com/",
     title: "Talent Registration Portal",
+    image: "/project/stafflynkglobal.png",
     category: "Web App",
     tools: "WordPress, JavaScript, PHP",
     info: "Dynamic registration portal with conditional fields, file uploads, form validation, and dynamic selections generated from a Fluent Forms specification.",
