@@ -242,7 +242,7 @@ const Homepage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Paul Abakada | Software Engineer & Founder | React, React Native, TypeScript
+          Paul Abakada | Senior Frontend Engineer | React, Next.js, TypeScript
         </title>
         <link rel="canonical" href="https://abakadapaul.netlify.app/" />
       </Helmet>
@@ -280,9 +280,9 @@ const Homepage = () => {
                 <span className="block text-[#A3F323] text-3xl sm:text-5xl md:text-6xl lg:text-7xl">ABAKADA</span>
               </h1>
               <div className="max-w-2xl mb-6 text-lg text-gray-400 sm:text-xl md:text-2xl sm:mb-8">
-                <span className="text-[#A3F323]">//</span> Software Engineer. Product Builder. Founder.
-                <span className="block">I design and ship web, mobile, and AI-powered products</span>
-                <span className="block">that solve real problems from idea to deployment.</span>
+                <span className="text-[#A3F323]">//</span> Senior Frontend Engineer. React. Next.js. TypeScript.
+                <span className="block">I build scalable, high-performance web and mobile applications</span>
+                <span className="block">with 4+ years of production engineering experience.</span>
               </div>
             </div>
 
