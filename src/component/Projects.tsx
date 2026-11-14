@@ -1,5 +1,29 @@
 const projects = [
   {
+    id: 23,
+    link: "https://trivogames.com",
+    title: "TrivoGames",
+    category: "Real-time Web & Mobile",
+    tools: "Next.js, React Native, TypeScript, WebSockets",
+    info: "Built multiplayer trivia experiences for web and mobile, including scheduled games, countdowns, synchronised sessions and real-time game updates.",
+  },
+  {
+    id: 24,
+    link: "#",
+    title: "Chef4Me Marketplace",
+    category: "Marketplace",
+    tools: "Next.js, React, TypeScript, Stripe, Paystack",
+    info: "Developed multi-role customer, chef and administration workflows, including quotations, bookings, checkout, payments and order tracking.",
+  },
+  {
+    id: 25,
+    link: "https://schoolers.academy",
+    title: "Virtual School Platform",
+    category: "Education",
+    tools: "Next.js, TypeScript, LiveKit, React",
+    info: "Developed student, tutor and parent interfaces and live classroom features with real-time audio and video controls.",
+  },
+  {
     id: 1,
     link: "#",
     title: "GetNextRole - AI Recruitment Platform",

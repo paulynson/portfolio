@@ -26,9 +26,8 @@ const Portfolios = () => {
             <span className="block text-black dark:text-[#A3F323]">WORKS</span>
           </h2>
           <p className="max-w-3xl text-xl text-gray-600 dark:text-gray-200">
-            A curated collection of projects spanning SaaS platforms, AI-powered applications,
-            enterprise web apps, React Native mobile apps, WordPress solutions, analytics systems,
-            and digital transformation projects.
+            Selected frontend engineering work across production marketplaces, real-time
+            applications, education platforms, SaaS and React Native mobile experiences.
           </p>
         </div>
 

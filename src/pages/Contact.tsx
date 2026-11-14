@@ -36,10 +36,9 @@ function Contact() {
             </span>
           </h2>
           <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-400 dark:text-gray-200">
-            With 3+ years of experience in HR tech, eCommerce, LMS, Food Tech,
-            and SaaS products, plus expertise in AI systems development and job
-            search automation, I'm ready to help bring your next project to life
-            with modern, intelligent solutions.
+            With 4+ years of experience building production applications across SaaS,
+            marketplaces, HR technology and real-time platforms, I specialise
+            in React, Next.js, TypeScript and React Native. Let's discuss your next project.
           </p>
         </div>
 

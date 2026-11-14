@@ -36,10 +36,10 @@ function App() {
       onWindowMatch();
     };
 
-    darkQuery.addListener(mediaQueryListener);
+    darkQuery.addEventListener("change", mediaQueryListener);
 
     return () => {
-      darkQuery.removeListener(mediaQueryListener);
+      darkQuery.removeEventListener("change", mediaQueryListener);
     };
   }, [element, darkQuery]);
 
@@ -64,7 +64,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          About Paul Abakada | UI Designer &amp; Front End Developer
+          Paul Abakada | Senior Frontend Engineer | React, Next.js, TypeScript
         </title>
         <link rel="canonical" href="https://abakadapaul.netlify.app/" />
       </Helmet>
