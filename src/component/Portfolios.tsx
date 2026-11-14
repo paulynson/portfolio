@@ -95,6 +95,16 @@ const Portfolios = () => {
                 {String((page - 1) * PAGE_SIZE + index + 1).padStart(2, "0")}
               </div>
 
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt={`${project.title} application screenshot`}
+                  loading="lazy"
+                  decoding="async"
+                  className="block w-full aspect-video object-cover border-b border-white/10"
+                />
+              )}
+
               {/* Project Content */}
               <div className="p-6 sm:p-8 pt-10 sm:pt-12">
                 {/* Category Badge */}
@@ -187,6 +197,14 @@ const Portfolios = () => {
               <p className="mb-6 font-mono text-sm text-[#A3F323]">
                 {selectedProject.category}
               </p>
+              {selectedProject.image && (
+                <img
+                  src={selectedProject.image}
+                  alt={`${selectedProject.title} application screenshot`}
+                  className="mb-6 block w-full h-auto border border-white/20"
+                  decoding="async"
+                />
+              )}
               <div id="project-details-description" className="space-y-7">
                 <section>
                   <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Project overview</h4>
