@@ -55,7 +55,7 @@ const Portfolios = () => {
 
   return (
     <section
-      className="py-32 bg-white dark:bg-[#1b4444] transition-colors duration-500"
+      className="py-16 sm:py-32 bg-white dark:bg-[#1b4444] transition-colors duration-500"
       id="portfolio"
     >
       <div className="px-6 mx-auto max-w-7xl">
@@ -79,6 +79,14 @@ const Portfolios = () => {
           {paginated.map((project, index) => (
             <div
               key={project.id}
+              tabIndex={project.link === "#" ? 0 : undefined}
+              role={project.link === "#" ? "button" : undefined}
+              onKeyDown={(event) => {
+                if (project.link === "#" && (event.key === "Enter" || event.key === " ")) {
+                  event.preventDefault();
+                  openDetails(project);
+                }
+              }}
               onClick={() => { if (project.link === "#") openDetails(project); }}
               className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500"
             >
