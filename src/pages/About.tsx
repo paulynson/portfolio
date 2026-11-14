@@ -229,7 +229,6 @@ function About() {
             </div>
           </div>
 
-          <div className="text-center"><a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" className="inline-block border-2 border-[#A3F323] px-6 py-3 text-center font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black">DOWNLOAD CV (PDF)</a></div>
           {/* Mobile CTA */}
           <div className="pt-4">
             <a
@@ -315,7 +314,6 @@ function About() {
               >
                 LET'S COLLABORATE
               </a>
-              <a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" className="inline-block border-2 border-[#A3F323] px-6 py-3 text-center font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black">DOWNLOAD CV (PDF)</a>
             </div>
           </div>
         </div>
