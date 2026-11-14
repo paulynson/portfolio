@@ -5,13 +5,15 @@ import { HiOutlineMenu } from "react-icons/hi";
 interface NavListItemProps {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-function NavListItem({ href, children }: NavListItemProps) {
+function NavListItem({ href, children, onClick }: NavListItemProps) {
   return (
     <li>
       <a
         href={href}
+        onClick={onClick}
         className="text-white dark:text-white hover:text-[#A3F323] dark:hover:text-[#A3F323] transition-colors duration-200 font-mono text-sm tracking-wider relative group"
       >
         <span className="text-[#A3F323] dark:text-[#A3F323] mr-1">&gt;</span>
@@ -22,12 +24,12 @@ function NavListItem({ href, children }: NavListItemProps) {
   );
 }
 
-function NavList() {
+function NavList({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <ul className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
-      <NavListItem href="#portfolio">PROJECTS</NavListItem>
-      <NavListItem href="#about">ABOUT</NavListItem>
-      <NavListItem href="#contact">CONTACT</NavListItem>
+      <NavListItem href="#portfolio" onClick={onNavigate}>PROJECTS</NavListItem>
+      <NavListItem href="#about" onClick={onNavigate}>ABOUT</NavListItem>
+      <NavListItem href="#contact" onClick={onNavigate}>CONTACT</NavListItem>
     </ul>
   );
 }
@@ -72,14 +74,16 @@ export function NavbarComponent() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <NavList />
+            <NavList onNavigate={() => setOpenNav(false)} />
           </div>
 
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition-colors duration-200"
             onClick={() => setOpenNav(!openNav)}
-            aria-label="Toggle navigation menu"
+            aria-label={openNav ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={openNav}
+            aria-controls="mobile-navigation"
           >
             {openNav ? (
               <AiOutlineClose className="h-6 w-6 text-white dark:text-white" />
@@ -91,7 +95,7 @@ export function NavbarComponent() {
 
         {/* Mobile Navigation */}
         {openNav && (
-          <div className="lg:hidden mt-6 pb-4 border-t border-[#A3F323]/20 pt-6 bg-black/95 dark:bg-[#1b4444]/95 backdrop-blur-md rounded-lg">
+          <div id="mobile-navigation" className="lg:hidden mt-6 pb-4 border-t border-[#A3F323]/20 pt-6 bg-black/95 dark:bg-[#1b4444]/95 backdrop-blur-md rounded-lg">
             <NavList />
           </div>
         )}
