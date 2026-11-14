@@ -77,7 +77,7 @@ const Portfolios = () => {
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
-                  {project.tools.split(", ").slice(0, 4).map((tool, i) => (
+                  {project.tools.split(", ").slice(0, 4).map((tool) => (
                     <span
                       key={`${project.id}-${tool}`}
                       className="px-2 py-1 font-mono text-xs border rounded-full sm:px-3 border-current/30"
