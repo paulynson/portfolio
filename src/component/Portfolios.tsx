@@ -79,6 +79,7 @@ const Portfolios = () => {
           {paginated.map((project, index) => (
             <div
               key={project.id}
+              onClick={() => { if (project.link === "#") openDetails(project); }}
               className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500"
             >
               {/* Project Number */}
@@ -115,7 +116,7 @@ const Portfolios = () => {
                   {project.link === "#" && (
                     <button
                       type="button"
-                      onClick={() => openDetails(project)}
+                      onClick={(event) => { event.stopPropagation(); openDetails(project); }}
                       className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 transition-all duration-300 border border-current rounded-full hover:bg-current"
                       title={`Read about ${project.title}`}
                       aria-label={`Read about ${project.title}`}
