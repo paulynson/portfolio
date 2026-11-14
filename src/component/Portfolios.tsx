@@ -1,11 +1,54 @@
-import { useState } from "react";
-import projects from "./Projects";
-import { FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import projects, { type PortfolioProject } from "./Projects";
+import { FaExternalLinkAlt, FaChevronLeft, FaChevronRight, FaTimes, FaInfoCircle } from "react-icons/fa";
 
 const PAGE_SIZE = 6;
 
 const Portfolios = () => {
   const [page, setPage] = useState(1);
+  const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
+
+  const openDetails = (project: PortfolioProject) => {
+    previousFocusRef.current = document.activeElement as HTMLElement | null;
+    setSelectedProject(project);
+  };
+
+  const closeDetails = () => {
+    setSelectedProject(null);
+    window.requestAnimationFrame(() => previousFocusRef.current?.focus());
+  };
+
+  useEffect(() => {
+    if (!selectedProject) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeDetails();
+      if (event.key === "Tab") {
+        const modal = document.getElementById("project-details-modal");
+        const focusable = modal?.querySelectorAll<HTMLElement>('button:not([disabled]), a[href]');
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [selectedProject]);
 
   const totalPages = Math.ceil(projects.length / PAGE_SIZE);
   const paginated = projects.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -69,6 +112,17 @@ const Portfolios = () => {
                       <FaExternalLinkAlt size={12} className="group-hover:text-black" />
                     </a>
                   )}
+                  {project.link === "#" && (
+                    <button
+                      type="button"
+                      onClick={() => openDetails(project)}
+                      className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 transition-all duration-300 border border-current rounded-full hover:bg-current"
+                      title={`Read about ${project.title}`}
+                      aria-label={`Read about ${project.title}`}
+                    >
+                      <FaInfoCircle size={14} aria-hidden="true" />
+                    </button>
+                  )}
                 </div>
 
                 <p className="mb-6 text-sm leading-relaxed opacity-80">
@@ -90,6 +144,57 @@ const Portfolios = () => {
             </div>
           ))}
         </div>
+
+        {selectedProject && (
+          <div
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6"
+            onMouseDown={(event) => {
+              if (event.target === event.currentTarget) closeDetails();
+            }}
+          >
+            <div
+              id="project-details-modal"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="project-details-title"
+              aria-describedby="project-details-description"
+              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto border border-[#A3F323] bg-black dark:bg-[#1b4444] p-6 text-white shadow-2xl sm:p-10"
+            >
+              <button
+                ref={closeButtonRef}
+                type="button"
+                onClick={closeDetails}
+                className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/40 text-white hover:bg-[#A3F323] hover:text-black"
+                aria-label="Close project details"
+              >
+                <FaTimes aria-hidden="true" />
+              </button>
+              <div className="mb-4 pr-12 font-mono text-xs uppercase tracking-wider text-[#A3F323]">
+                PROJECT_DETAILS
+              </div>
+              <h3 id="project-details-title" className="mb-3 pr-8 text-2xl font-black sm:text-4xl">
+                {selectedProject.title}
+              </h3>
+              <p className="mb-6 font-mono text-sm text-[#A3F323]">
+                {selectedProject.category}
+              </p>
+              <p id="project-details-description" className="mb-8 leading-relaxed text-gray-200">
+                {selectedProject.info}
+              </p>
+              <h4 className="mb-3 text-sm font-bold uppercase tracking-wider">Technologies used</h4>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.tools.split(", ").map((tool) => (
+                  <span key={tool} className="border border-white/30 px-3 py-2 font-mono text-xs">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-8 text-xs text-gray-400">
+                A public project link is not currently available.
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Pagination */}
         <div className="flex items-center justify-center gap-4 mt-16">
