@@ -37,7 +37,7 @@ function About() {
       period: "Apr 2024 – Jul 2024",
       summary: "Built HR and payroll interfaces that support employee administration and day-to-day workforce operations.",
       achievements: [
-        "Developed React and TypeScript dashboards for payroll, attendance and employee records.",
+        "Developed React and TypeScript administrative dashboards for payroll, attendance and employee records.",
         "Implemented interfaces for payroll configuration and employee management.",
         "Integrated backend APIs and built reusable components for responsive administrative workflows.",
       ],
