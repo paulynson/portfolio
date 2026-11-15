@@ -33,7 +33,7 @@ function Contact() {
             <a href="mailto:paulabakada@gmail.com" className="block break-all text-xl font-semibold text-white underline decoration-[#A3F323]/50 underline-offset-8 transition-colors hover:text-[#A3F323] sm:text-2xl">
               paulabakada@gmail.com
             </a>
-            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" className="mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
+            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" className="contact-cta mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
               SEND AN EMAIL <FaArrowRight aria-hidden="true" />
             </a>
           </div>
