@@ -92,7 +92,7 @@ function About() {
       "Flutterwave",
       "AI APIs",
     ],
-    tools: ["Git & GitHub", "Docker", "Figma", "Postman", "Vercel / Netlify"],
+    tools: ["Git & GitHub", "Figma", "Postman", "Vercel / Netlify"],
     expertise: [
       "SaaS Development",
       "AI-powered Applications",
