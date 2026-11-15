@@ -31,3 +31,39 @@ html { scroll-padding-top: 6rem; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Visible interaction polish, preserving existing layout and colours. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-enter { animation: hero-arrive 750ms cubic-bezier(.2,.75,.25,1) both; }
+  .hero-enter-delayed { animation-delay: 220ms; }
+  .hero-type-line { animation: hero-arrive 650ms ease-out 400ms both; }
+  .project-interactive { transition: transform 280ms ease, box-shadow 280ms ease, background-color 280ms ease, color 280ms ease; }
+  .project-interactive:hover, .project-interactive:focus-within {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 35px rgba(0,0,0,.18), 0 0 0 2px #A3F323;
+  }
+  .project-interactive img { transition: transform 420ms ease; }
+  .project-interactive:hover img, .project-interactive:focus-within img { transform: scale(1.045); }
+  .project-hover-label { opacity: 0; transform: translateY(-6px); transition: opacity 240ms ease, transform 240ms ease; }
+  .project-interactive:hover .project-hover-label, .project-interactive:focus-within .project-hover-label { opacity: 1; transform: translateY(0); }
+  .experience-interactive { transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease; }
+  .experience-interactive:hover, .experience-interactive:focus-within {
+    transform: translateX(5px);
+    box-shadow: inset 3px 0 0 #A3F323, 0 8px 24px rgba(0,0,0,.16);
+  }
+  .experience-interactive:hover > span:first-child { box-shadow: 0 0 0 5px rgba(163,243,35,.18), 0 0 16px #A3F323; }
+  .skill-interactive { transition: transform 200ms ease, color 200ms ease; }
+  .skill-interactive:hover { transform: translateX(5px); color: #A3F323; }
+  .contact-cta { transition: transform 240ms ease, box-shadow 240ms ease, background-color 240ms ease; }
+  .contact-cta:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(163,243,35,.25); }
+  .contact-cta svg { transition: transform 240ms ease; }
+  .contact-cta:hover svg { transform: translateX(5px); }
+  .project-modal-backdrop { animation: backdrop-enter 220ms ease-out both; }
+  .project-modal-panel { animation: modal-enter 300ms cubic-bezier(.2,.75,.25,1) both; }
+}
+@keyframes hero-arrive { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modal-enter { from { opacity: 0; transform: translateY(18px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (hover: none) {
+  .project-hover-label { opacity: 1; transform: none; }
+}
