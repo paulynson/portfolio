@@ -172,14 +172,14 @@ const projects: PortfolioProject[] = [
         "Core features across user-facing and administration sections",
         "Exhibitions, auctions, workshops and an art community feed",
       ],
-      contribution: "As Frontend Team Lead, I implemented approximately 80% of the platform, including the marketplace, Stripe integration and distinct login flows for artists, galleries, suppliers and other user roles. I supervised another developer responsible for the initial admin section and later implemented core functionality in both the user-facing and admin sections.",
+      contribution: "As Frontend Team Lead, I implemented approximately 80% of the platform, including the marketplace, Stripe integration and distinct login flows for artists, galleries, suppliers and other user roles. I supervised another developer responsible for the initial admin section, reviewed code from other developers, merged their implementations, and later implemented core functionality in both the user-facing and admin sections.",
       challenges: [
         "Designing coherent experiences for multiple user roles",
         "Integrating marketplace flows with Stripe payments",
-        "Coordinating frontend implementation and reviewing work across user and admin interfaces",
+        "Reviewing code, integrating and merging contributions from other developers across user and admin interfaces",
       ],
-      engineering: "Built React and TypeScript interfaces for the marketplace and role-specific user journeys, integrated Stripe payments, and contributed core functionality across the main platform and administration experience. Led frontend delivery while supervising another developer's implementation of the admin section.",
-      outcome: "Delivered substantial frontend functionality across the marketplace, payments, multi-role authentication and administration, while leading implementation and supporting another developer. The approximately 80% contribution is a personal estimate, not an independently measured metric.",
+      engineering: "Built React and TypeScript interfaces for the marketplace and role-specific user journeys, integrated Stripe payments, and contributed core functionality across the main platform and administration experience. Led frontend delivery by reviewing code, merging other developers' implementations and supervising another developer's work on the admin section.",
+      outcome: "Delivered substantial frontend functionality across the marketplace, payments, multi-role authentication and administration, while leading implementation, reviewing code and merging contributions from other developers. The approximately 80% contribution is a personal estimate, not an independently measured metric.",
     },
   },
   {
