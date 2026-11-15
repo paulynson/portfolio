@@ -1,96 +1,48 @@
-import { FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaArrowRight, FaEnvelope, FaGithub } from "react-icons/fa";
 
 function Contact() {
-  const contactInfo = [
-    {
-      icon: FaEnvelope,
-      label: "Email",
-      value: "paulabakada@gmail.com",
-      href: "mailto:paulabakada@gmail.com",
-    },
-    {
-      icon: FaPhone,
-      label: "Phone",
-      value: "+234 812 515 7424",
-      href: "tel:08125157424",
-    },
-    // {
-    //   icon: FaMapMarkerAlt,
-    //   label: "Location",
-    //   value: "Lagos State, Nigeria",
-    //   href: "#",
-    // },
-  ];
-
   return (
     <section
-      className="py-32 bg-black dark:bg-[#1b4444] text-white dark:text-white transition-colors duration-500"
       id="contact"
+      className="relative overflow-hidden bg-black py-24 text-white transition-colors duration-500 dark:bg-[#1b4444] sm:py-32"
     >
-      <div className="max-w-4xl px-6 mx-auto text-center">
-        <div className="mb-16">
-          <h2 className="mb-6 text-6xl font-black text-white dark:text-white">
-            Let's Build
-            <span className="block text-[#A3F323] dark:text-[#A3F323]">
-              Something Great
-            </span>
-          </h2>
-          <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-400 dark:text-gray-200">
-            With 4+ years of experience building production applications across SaaS,
-            marketplaces, HR technology and real-time platforms, I specialise
-            in React, Next.js, TypeScript and React Native. Let's discuss your next project.
-          </p>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-20" style={{
+        backgroundImage: "linear-gradient(rgba(163,243,35,.12) 1px, transparent 1px), linear-gradient(90deg,rgba(163,243,35,.12) 1px, transparent 1px)",
+        backgroundSize: "48px 48px",
+        maskImage: "linear-gradient(to bottom, transparent, black 35%, transparent)",
+      }} />
+      <div className="relative mx-auto max-w-6xl px-6">
+        <div className="mb-6 font-mono text-sm tracking-widest text-[#A3F323]">
+          &gt; CONTACT.connect()
         </div>
-
-        <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 sm:gap-8 sm:mb-16">
-          {contactInfo.map((item, index) => {
-            const IconComponent = item.icon;
-            return (
-              <div key={index} className="text-center group">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#A3F323] dark:bg-[#A3F323] rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <IconComponent
-                    size={20}
-                    className="text-black sm:text-2xl dark:text-black"
-                  />
-                </div>
-                <p className="mb-2 text-xs font-medium text-gray-400 sm:text-sm dark:text-gray-300">
-                  {item.label}
-                </p>
-                {item.href !== "#" ? (
-                  <a
-                    href={item.href}
-                    className="text-white dark:text-white hover:text-[#A3F323] dark:hover:text-[#A3F323] transition-colors duration-300 font-medium text-sm sm:text-base"
-                  >
-                    {item.value}
-                  </a>
-                ) : (
-                  <p className="text-sm font-medium text-white dark:text-white sm:text-base">
-                    {item.value}
-                  </p>
-                )}
-              </div>
-            );
-          })}
+        <div className="grid items-end gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+          <div>
+            <h2 className="max-w-3xl text-5xl font-black leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+              Have something <span className="text-[#A3F323]">great</span> in mind?
+            </h2>
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-gray-300">
+              Whether you’re building a product, growing a team or looking for a frontend engineer,
+              I’d love to hear what you’re working on.
+            </p>
+          </div>
+          <div className="border border-white/20 bg-white/[0.04] p-6 sm:p-8">
+            <div className="mb-5 flex h-12 w-12 items-center justify-center border border-[#A3F323]/40 text-[#A3F323]">
+              <FaEnvelope aria-hidden="true" size={20} />
+            </div>
+            <p className="mb-2 font-mono text-xs uppercase tracking-widest text-gray-400">Get in touch</p>
+            <a href="mailto:paulabakada@gmail.com" className="block break-all text-xl font-semibold text-white underline decoration-[#A3F323]/50 underline-offset-8 transition-colors hover:text-[#A3F323] sm:text-2xl">
+              paulabakada@gmail.com
+            </a>
+            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" className="mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
+              SEND AN EMAIL <FaArrowRight aria-hidden="true" />
+            </a>
+          </div>
         </div>
-        <div className="flex justify-center gap-4 mb-8 sm:gap-6 sm:mb-12">
-          <a
-            href="https://github.com/paulynson"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 dark:bg-white/10 backdrop-blur-sm border border-white/20 dark:border-white/20 rounded-2xl flex items-center justify-center hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-300 group"
-          >
-            <FaGithub
-              size={20}
-              className="transition-transform duration-300 sm:text-2xl group-hover:scale-110"
-            />
+        <div className="mt-16 flex flex-col gap-5 border-t border-white/20 pt-7 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-mono text-xs text-gray-400">LET'S BUILD SOMETHING MEANINGFUL.</p>
+          <a href="https://github.com/paulynson" target="_blank" rel="noopener noreferrer" aria-label="Visit Paul Abakada on GitHub (opens in a new tab)" className="inline-flex items-center gap-2 self-start text-sm text-gray-300 transition-colors hover:text-[#A3F323]">
+            <FaGithub aria-hidden="true" size={18} /> GitHub <FaArrowRight aria-hidden="true" size={12} />
           </a>
-        </div>
-
-
-        <div className="text-center">
-          <p className="text-sm text-gray-400 dark:text-gray-300">
-            Crafted with passion.
-          </p>
         </div>
       </div>
     </section>
