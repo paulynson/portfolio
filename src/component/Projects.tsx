@@ -162,7 +162,25 @@ const projects: PortfolioProject[] = [
     image: "/project/qrateart.png",
     category: "SaaS",
     tools: "React, TypeScript, Node.js, Tailwind CSS",
-    info: "Platform bridging the gap between art supply vendors and elite artists. Features exhibitions, auctions, workshops, art supply marketplace, and an X-style social feed connecting artists directly to art Qraters.",
+    info: "Led frontend delivery and implemented approximately 80% of the platform, including the art marketplace, Stripe payments, role-specific authentication and core user and admin features.",
+    caseStudy: {
+      overview: "Qrate Art connects artists, galleries, suppliers and other participants through an art-focused platform with a marketplace, exhibitions, auctions, workshops and community features. I served as Frontend Team Lead and implemented approximately 80% of the platform.",
+      features: [
+        "Art marketplace for platform users",
+        "Stripe payment integration",
+        "Role-specific login and experiences for artists, galleries, suppliers and other user types",
+        "Core features across user-facing and administration sections",
+        "Exhibitions, auctions, workshops and an art community feed",
+      ],
+      contribution: "As Frontend Team Lead, I implemented approximately 80% of the platform, including the marketplace, Stripe integration and distinct login flows for artists, galleries, suppliers and other user roles. I supervised another developer responsible for the initial admin section and later implemented core functionality in both the user-facing and admin sections.",
+      challenges: [
+        "Designing coherent experiences for multiple user roles",
+        "Integrating marketplace flows with Stripe payments",
+        "Coordinating frontend implementation and reviewing work across user and admin interfaces",
+      ],
+      engineering: "Built React and TypeScript interfaces for the marketplace and role-specific user journeys, integrated Stripe payments, and contributed core functionality across the main platform and administration experience. Led frontend delivery while supervising another developer's implementation of the admin section.",
+      outcome: "Delivered substantial frontend functionality across the marketplace, payments, multi-role authentication and administration, while leading implementation and supporting another developer. The approximately 80% contribution is a personal estimate, not an independently measured metric.",
+    },
   },
   {
     id: 10,
