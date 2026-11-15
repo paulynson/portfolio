@@ -45,6 +45,7 @@ export function NavbarComponent() {
   const [openNav, setOpenNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
@@ -53,9 +54,12 @@ export function NavbarComponent() {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("resize", handleWindowResize);
 
     return () => {
@@ -126,6 +130,7 @@ export function NavbarComponent() {
           </div>
         )}
       </nav>
+      <div role="progressbar" aria-label="Page scroll progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(scrollProgress)} className="pointer-events-none absolute bottom-0 left-0 h-[3px] bg-[#A3F323] transition-[width] duration-150" style={{ width: `${scrollProgress}%` }} />
     </header>
   );
 }
