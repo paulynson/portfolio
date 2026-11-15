@@ -4,7 +4,8 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-black py-24 text-white transition-colors duration-500 dark:bg-[#1b4444] sm:py-32"
+      data-pointer-spotlight
+      className="pointer-spotlight relative overflow-hidden bg-black py-24 text-white transition-colors duration-500 dark:bg-[#1b4444] sm:py-32"
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-20" style={{
         backgroundImage: "linear-gradient(rgba(163,243,35,.12) 1px, transparent 1px), linear-gradient(90deg,rgba(163,243,35,.12) 1px, transparent 1px)",
@@ -33,7 +34,7 @@ function Contact() {
             <a href="mailto:paulabakada@gmail.com" className="block break-all text-xl font-semibold text-white underline decoration-[#A3F323]/50 underline-offset-8 transition-colors hover:text-[#A3F323] sm:text-2xl">
               paulabakada@gmail.com
             </a>
-            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" className="contact-cta mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
+            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" data-pointer-magnetic className="magnetic-action contact-cta mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
               SEND AN EMAIL <FaArrowRight aria-hidden="true" />
             </a>
           </div>
