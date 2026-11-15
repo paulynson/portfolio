@@ -17,18 +17,17 @@ const Homepage = () => {
       <section data-pointer-spotlight className="pointer-spotlight min-h-screen bg-black dark:bg-[#1b4444] text-white dark:text-white relative overflow-hidden flex items-center px-4 sm:px-6 transition-colors duration-500">
         {/* Animated Background Grid */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
+          <div className="absolute inset-0 hero-background-grid" style={{
             backgroundImage: `
               linear-gradient(rgba(163, 243, 35, 0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(163, 243, 35, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '30px 30px',
-            animation: 'grid-move 20s linear infinite'
           }}></div>
         </div>
         {/* Floating Elements - Hidden on mobile */}
         <div className="absolute inset-0 hidden overflow-hidden sm:block">
-          <div className="absolute top-20 left-20 w-2 h-2 bg-[#A3F323] rounded-full animate-pulse"></div>
+          <div className="absolute top-20 left-20 w-2 h-2 bg-[#A3F323] rounded-full motion-safe:animate-pulse"></div>
           <div className="absolute top-40 right-32 w-1 h-1 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
           <div className="absolute top-1/3 right-20 w-1 h-1 bg-[#A3F323] rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
@@ -76,6 +75,7 @@ const Homepage = () => {
               <a
 
                 href="https://github.com/paulynson"
+                aria-label="View GitHub profile (opens in a new tab)"
 
                 target="_blank"
 
@@ -85,7 +85,7 @@ const Homepage = () => {
 
               >
 
-                <FaGithub size={24} />
+                <FaGithub size={24} aria-hidden="true" />
 
               </a>
 
