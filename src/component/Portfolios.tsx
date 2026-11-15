@@ -348,13 +348,13 @@ const Portfolios = () => {
           </button>
         </div>
 
-        <div className="mt-3 text-center font-mono text-xs text-gray-400 dark:text-gray-400">
+        <div className="mt-3 text-center font-mono text-xs text-gray-600 dark:text-gray-200">
           PAGE {page} / {totalPages} — {projects.length} PROJECTS
         </div>
 
         {/* Call to Action */}
         <div className="mt-16 text-center sm:mt-20">
-          <div className="mb-4 font-mono text-xs text-gray-400 dark:text-gray-300 sm:text-sm">
+          <div className="mb-4 font-mono text-xs text-gray-600 dark:text-gray-200 sm:text-sm">
             INTERESTED_IN_COLLABORATION?
           </div>
           <a
