@@ -162,6 +162,7 @@ const projects: PortfolioProject[] = [
     },
   },
 
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 4,
     link: "#",
@@ -182,6 +183,7 @@ const projects: PortfolioProject[] = [
       outcome: "Delivered core learning workflows spanning course access, assessment and progress visibility.",
     },
   },
+  */
   {
     id: 5,
     link: "https://www.apisatenterprises.com.ng/apps/marketlist",
@@ -190,6 +192,7 @@ const projects: PortfolioProject[] = [
     tools: "React Native, Expo, NativeWind, TypeScript",
     info: "Mobile app for market and shopping management with shopping lists, quantity management, cost tracking, and subscription monetisation.",
   },
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 10,
     link: "https://www.apisatenterprises.com.ng/",
@@ -199,6 +202,8 @@ const projects: PortfolioProject[] = [
     tools: "JavaScript, React, TypeScript, Tailwind CSS",
     info: "Company website showcasing web development, mobile development, SEO, data analysis, company registration, and graphic design services.",
   },
+  */
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 11,
     link: "https://www.stafflynkglobal.com/",
@@ -208,6 +213,7 @@ const projects: PortfolioProject[] = [
     tools: "WordPress, JavaScript, PHP",
     info: "Dynamic registration portal with conditional fields, file uploads, form validation, and dynamic selections generated from a Fluent Forms specification.",
   },
+  */
 
   // {
   //   id: 13,
@@ -217,6 +223,7 @@ const projects: PortfolioProject[] = [
   //   tools: "WordPress, Social Media, Paid Ads",
   //   info: "Volunteered on the digital team managing the website, social media, paid advertising, content planning, and speaker promotional materials.",
   // },
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 16,
     link: "#",
@@ -236,6 +243,8 @@ const projects: PortfolioProject[] = [
       outcome: "Provides a more fluid way to browse and narrow WooCommerce product catalogues.",
     },
   },
+  */
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 17,
     link: "#",
@@ -255,6 +264,7 @@ const projects: PortfolioProject[] = [
       outcome: "Makes plugin auditing easier by bringing relevant status information together.",
     },
   },
+  */
   {
     id: 18,
     link: "https://chromewebstore.google.com/detail/productitab/ojfjkhclfjkcdhfioliiefafoobbcphh",
@@ -301,6 +311,7 @@ const projects: PortfolioProject[] = [
       outcome: "Creates a focused mobile workflow for organising ideas and following through on tasks.",
     },
   },
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 21,
     link: "#",
@@ -321,6 +332,8 @@ const projects: PortfolioProject[] = [
       outcome: "Brings live instruction and structured learning activities into a shared platform experience.",
     },
   },
+  */
+  /* Hidden from main portfolio: retained for future use.
   {
     id: 22,
     link: "#",
@@ -340,6 +353,7 @@ const projects: PortfolioProject[] = [
       outcome: "Delivers a playable sports quiz experience with feedback on performance.",
     },
   },
+  */
 ];
 
 export default projects;
