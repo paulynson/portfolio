@@ -94,8 +94,9 @@ const Portfolios = () => {
                 }
               }}
               onClick={() => { if (project.link === "#") openDetails(project); }}
-              className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
+              className="project-interactive group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
             >
+              <span aria-hidden="true" className="project-hover-label pointer-events-none absolute right-4 top-4 z-10 border border-[#A3F323] bg-black/90 px-3 py-2 font-mono text-xs text-[#A3F323] sm:right-6 sm:top-6">{project.link === "#" ? "VIEW DETAILS ↗" : "EXPLORE PROJECT ↗"}</span>
               {/* Project Number */}
               <div className="absolute text-4xl font-black transition-opacity duration-500 top-4 sm:top-6 left-4 sm:left-6 sm:text-6xl opacity-10 group-hover:opacity-20">
                 {String((page - 1) * PAGE_SIZE + index + 1).padStart(2, "0")}
@@ -172,7 +173,7 @@ const Portfolios = () => {
 
         {selectedProject && (
           <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6"
+            className="project-modal-backdrop fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6"
             onMouseDown={(event) => {
               if (event.target === event.currentTarget) closeDetails();
             }}
@@ -183,7 +184,7 @@ const Portfolios = () => {
               aria-modal="true"
               aria-labelledby="project-details-title"
               aria-describedby="project-details-description"
-              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto border border-[#A3F323] bg-black dark:bg-[#1b4444] p-6 text-white shadow-2xl sm:p-10"
+              className="project-modal-panel relative w-full max-w-2xl max-h-[85vh] overflow-y-auto border border-[#A3F323] bg-black dark:bg-[#1b4444] p-6 text-white shadow-2xl sm:p-10"
             >
               <button
                 ref={closeButtonRef}
