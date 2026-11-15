@@ -94,7 +94,7 @@ const Portfolios = () => {
                 }
               }}
               onClick={() => { if (project.link === "#") openDetails(project); }}
-              className="project-interactive group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
+              data-pointer-tilt className="project-interactive pointer-tilt group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
             >
               <span aria-hidden="true" className="project-hover-label pointer-events-none absolute right-4 top-4 z-10 border border-[#A3F323] bg-black/90 px-3 py-2 font-mono text-xs text-[#A3F323] sm:right-6 sm:top-6">{project.link === "#" ? "VIEW DETAILS ↗" : "EXPLORE PROJECT ↗"}</span>
               {/* Project Number */}
