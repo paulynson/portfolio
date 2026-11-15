@@ -85,18 +85,18 @@ const Portfolios = () => {
           {paginated.map((project, index) => (
             <div
               key={project.id}
-              tabIndex={project.link === "#" ? 0 : undefined}
-              role={project.link === "#" ? "button" : undefined}
+              tabIndex={project.caseStudy ? 0 : undefined}
+              role={project.caseStudy ? "button" : undefined}
               onKeyDown={(event) => {
-                if (project.link === "#" && (event.key === "Enter" || event.key === " ")) {
+                if (project.caseStudy && (event.key === "Enter" || event.key === " ")) {
                   event.preventDefault();
                   openDetails(project);
                 }
               }}
-              onClick={() => { if (project.link === "#") openDetails(project); }}
+              onClick={() => { if (project.caseStudy) openDetails(project); }}
               data-pointer-tilt className="project-interactive pointer-tilt group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
             >
-              <span aria-hidden="true" className="project-hover-label pointer-events-none absolute right-4 top-4 z-10 border border-[#A3F323] bg-black/90 px-3 py-2 font-mono text-xs text-[#A3F323] sm:right-6 sm:top-6">{project.link === "#" ? "VIEW DETAILS ↗" : "EXPLORE PROJECT ↗"}</span>
+              <span aria-hidden="true" className="project-hover-label pointer-events-none absolute right-4 top-4 z-10 border border-[#A3F323] bg-black/90 px-3 py-2 font-mono text-xs text-[#A3F323] sm:right-6 sm:top-6">{project.caseStudy ? "VIEW CASE STUDY ↗" : "EXPLORE PROJECT ↗"}</span>
               {/* Project Number */}
               <div className="absolute text-4xl font-black transition-opacity duration-500 top-4 sm:top-6 left-4 sm:left-6 sm:text-6xl opacity-10 group-hover:opacity-20">
                 {String((page - 1) * PAGE_SIZE + index + 1).padStart(2, "0")}
@@ -259,6 +259,25 @@ const Portfolios = () => {
                         ))}
                       </ul>
                     </section>
+                    {selectedProject.caseStudy.contribution && (
+                      <section>
+                        <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">My contribution</h4>
+                        <p className="leading-relaxed text-gray-200">{selectedProject.caseStudy.contribution}</p>
+                      </section>
+                    )}
+                    {selectedProject.caseStudy.challenges && (
+                      <section>
+                        <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Engineering challenges</h4>
+                        <ul className="space-y-3 text-gray-200">
+                          {selectedProject.caseStudy.challenges.map((challenge) => (
+                            <li key={challenge} className="flex items-start gap-3 leading-relaxed">
+                              <span aria-hidden="true" className="mt-1 text-[#A3F323]">•</span>
+                              <span>{challenge}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    )}
                     <section>
                       <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#A3F323]">Technical implementation</h4>
                       <p className="leading-relaxed text-gray-200">{selectedProject.caseStudy.engineering}</p>
@@ -279,9 +298,13 @@ const Portfolios = () => {
                   </span>
                 ))}
               </div>
-              <p className="mt-8 text-xs text-gray-400">
-                A public project link is not currently available.
-              </p>
+              {selectedProject.link !== "#" ? (
+                <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#A3F323] underline underline-offset-4">
+                  Visit project <FaExternalLinkAlt aria-hidden="true" size={11} />
+                </a>
+              ) : (
+                <p className="mt-8 text-xs text-gray-400">A public project link is not currently available.</p>
+              )}
             </div>
           </div>
         )}
