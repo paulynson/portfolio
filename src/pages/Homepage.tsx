@@ -9,7 +9,7 @@ const Homepage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Paul Abakada | Senior Frontend Engineer | React, Next.js, TypeScript
+          Paul Abakada | Frontend Engineer | React, Next.js, TypeScript
         </title>
         <link rel="canonical" href="https://abakadapaul.netlify.app/" />
       </Helmet>
@@ -43,7 +43,7 @@ const Homepage = () => {
                 <span className="block text-[#A3F323] text-3xl sm:text-5xl md:text-6xl lg:text-7xl">ABAKADA</span>
               </h1>
               <div className="max-w-2xl mb-6 text-lg text-gray-400 sm:text-xl md:text-2xl sm:mb-8">
-                <span className="text-[#A3F323]">//</span> Senior Frontend Engineer. React. Next.js. TypeScript.
+                <span className="text-[#A3F323]">//</span> Frontend Engineer. React. Next.js. TypeScript.
                 <span className="block hero-type-line">I engineer reliable, scalable web and mobile products</span>
                 <span className="block">with a focus on architecture, performance and maintainable frontend systems.</span>
               </div>
