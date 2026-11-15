@@ -41,9 +41,9 @@ const projects: PortfolioProject[] = [
     image: "/project/chef4me.png",
     category: "Marketplace",
     tools: "Next.js, React, TypeScript, Redux Toolkit, Stripe, Paystack",
-    info: "Implemented chef booking, food ordering, quotation requests and payment journeys, alongside customer-to-chef chat and KEMI AI-powered meal planning and nutrition features.",
+    info: "Implemented chef booking, food ordering, quotation requests and payment journeys, alongside customer-to-chef chat and KEMI AI-powered meal planning and nutrition features, plus improvements to the Learning Hub.",
     caseStudy: {
-      overview: "Chef4Me connects customers with professional chefs through a marketplace for booking chefs, ordering food, requesting quotations and completing payments. Different user roles need distinct journeys while sharing a consistent booking experience.",
+      overview: "Chef4Me connects customers with professional chefs through a marketplace for booking chefs, ordering food, requesting quotations and completing payments. Different user roles need distinct journeys while sharing a consistent booking experience. The platform also includes a Learning Hub with learner and lecturer experiences.",
       features: [
         "Direct messaging between customers and chefs",
         "KEMI AI chat for generating meals and multi-day meal plans",
@@ -56,11 +56,13 @@ const projects: PortfolioProject[] = [
         "Quotation and invoice workflows",
         "Payment integration and order tracking",
         "Order tracking and customer communication",
+        "Learning Hub improvements to learner and lecturer workflows",
+        "Video playback logic improvements and dashboard fixes for learners and tutors",
       ],
-      contribution: "Implemented chef booking, food ordering, quotation request and payment flows, alongside role-specific marketplace journeys, the customer-to-chef chat experience, and KEMI AI chat interfaces for meal generation, multi-day planning, food and pantry scanning, nutritional insights and calorie tracking.",
-      challenges: ["Maintaining consistent state across chef bookings, food orders and multi-step quotation requests", "Supporting distinct customer, chef, rider and business interfaces", "Building interactive chat and AI-assisted meal-planning experiences alongside the booking flow", "Coordinating authentication, API data and payment steps across a single user journey"],
-      engineering: "Developed Next.js, React and TypeScript interfaces with reusable components, Redux Toolkit, backend API integrations and Stripe/Paystack payment flows. Built frontend flows for booking chefs, ordering food and requesting quotations, including form progression, checkout and payment integration. Implemented customer-to-chef messaging and the frontend experience for KEMI, including conversational meal generation, multi-day planning, food and pantry scans, nutritional breakdowns and calorie tracking. Managed role-aware navigation, multi-step form progression and asynchronous data across these interconnected experiences.",
-      outcome: "Delivered interconnected marketplace journeys for chef booking, food ordering, quotation requests, customer-to-chef communication and payments, alongside KEMI-powered meal planning and nutrition features."
+      contribution: "Implemented chef booking, food ordering, quotation request and payment flows, alongside role-specific marketplace journeys, the customer-to-chef chat experience, and KEMI AI chat interfaces for meal generation, multi-day planning, food and pantry scanning, nutritional insights and calorie tracking. Improved existing Learning Hub code, corrected logic between learners and lecturers, refined video playback behaviour and fixed sections of the learner and tutor dashboards.",
+      challenges: ["Maintaining consistent state across chef bookings, food orders and multi-step quotation requests", "Supporting distinct customer, chef, rider and business interfaces", "Building interactive chat and AI-assisted meal-planning experiences alongside the booking flow", "Coordinating authentication, API data and payment steps across a single user journey", "Correcting learner-lecturer workflow logic and improving video playback and dashboard behaviour in the Learning Hub"],
+      engineering: "Developed Next.js, React and TypeScript interfaces with reusable components, Redux Toolkit, backend API integrations and Stripe/Paystack payment flows. Built frontend flows for booking chefs, ordering food and requesting quotations, including form progression, checkout and payment integration. Implemented customer-to-chef messaging and the frontend experience for KEMI, including conversational meal generation, multi-day planning, food and pantry scans, nutritional breakdowns and calorie tracking. Managed role-aware navigation, multi-step form progression and asynchronous data across these interconnected experiences. Also refactored parts of the existing Learning Hub code, corrected learner-lecturer interaction logic, improved video playback handling and resolved issues in the learner and tutor dashboards.",
+      outcome: "Delivered interconnected marketplace journeys for chef booking, food ordering, quotation requests, customer-to-chef communication and payments, alongside KEMI-powered meal planning and nutrition features. Improved the existing Learning Hub experience through workflow fixes, video playback enhancements and learner/tutor dashboard corrections."
     },
   },
   {
