@@ -1,7 +1,57 @@
 import about from "../assets/images/Paul.png";
 
 function About() {
-  const experience = [{"role":"Software Developer (Frontend)","company":"Chef4Me","period":"Nov 2024 - Oct 2026","detail":"Built marketplace journeys, integrated APIs and payments, and improved loading through code splitting."},{"role":"Frontend Developer","company":"Reposebay HR","period":"Apr 2024 - Jul 2024","detail":"Developed React and TypeScript dashboards for payroll, attendance and employee administration."},{"role":"Frontend Team Lead","company":"QrateArt","period":"May 2023 - May 2024","detail":"Led three frontend developers and reduced frontend bundle size by 20%."},{"role":"Frontend Developer","company":"Kev Solutions and Technology","period":"Jun 2022 - May 2023","detail":"Developed React interfaces for education, fintech and ecommerce projects with REST APIs and Redux Toolkit."}];
+  const experience = [
+    {
+      role: "Software Developer (Frontend)",
+      company: "Chef4Me",
+      period: "Nov 2024 – Oct 2026",
+      summary: "Developed frontend experiences for a multi-role marketplace connecting customers with professional chefs.",
+      achievements: [
+        "Built customer, chef, rider and business interfaces with role-specific onboarding and navigation.",
+        "Developed multi-step quotation requests, bookings, invoicing and checkout journeys.",
+        "Integrated backend APIs, authentication, payment gateways and real-time communication features.",
+        "Improved frontend maintainability and loading performance through reusable components and code splitting.",
+      ],
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
+    },
+    {
+      role: "Frontend Developer",
+      company: "Reposebay HR",
+      period: "Apr 2024 – Jul 2024",
+      summary: "Built HR and payroll interfaces that support employee administration and day-to-day workforce operations.",
+      achievements: [
+        "Developed React and TypeScript dashboards for payroll, attendance and employee records.",
+        "Implemented interfaces for payroll configuration and employee management.",
+        "Integrated backend APIs and built reusable components for responsive administrative workflows.",
+      ],
+      technologies: ["React", "TypeScript", "REST APIs"],
+    },
+    {
+      role: "Frontend Team Lead",
+      company: "QrateArt",
+      period: "May 2023 – May 2024",
+      summary: "Led frontend delivery for a digital art platform connecting artists, collectors and art-related services.",
+      achievements: [
+        "Coordinated frontend development through task planning, implementation reviews and collaboration.",
+        "Built interactive experiences for exhibitions, auctions, marketplace features and community engagement.",
+        "Improved component reuse and frontend performance, including a reported 20% reduction in bundle size.",
+      ],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Frontend Leadership"],
+    },
+    {
+      role: "Frontend Developer",
+      company: "Kev Solutions and Technology",
+      period: "Jun 2022 – May 2023",
+      summary: "Developed responsive web applications across education, fintech and e-commerce projects.",
+      achievements: [
+        "Translated product designs into reusable, responsive React interfaces.",
+        "Integrated REST APIs and managed application state with Redux Toolkit.",
+        "Collaborated with designers and developers to deliver features and resolve frontend issues.",
+      ],
+      technologies: ["React", "JavaScript", "Redux Toolkit", "REST APIs"],
+    },
+  ];
 
   const skills = {
     frontend: [
@@ -320,14 +370,37 @@ function About() {
 
         <div className="mb-16 sm:mb-20">
           <div className="mb-5 font-mono text-xs tracking-wider text-[#A3F323]">&gt; ENGINEER.experience()</div>
-          <h3 className="mb-8 text-2xl font-black text-white sm:text-4xl">PROFESSIONAL EXPERIENCE</h3>
-          <div className="grid gap-4 md:grid-cols-2">
-            {experience.map((job) => (
-              <article key={job.company} className="border border-gray-700 bg-gray-900 p-5 dark:border-gray-500 dark:bg-black/30 sm:p-6">
-                <p className="mb-2 font-mono text-xs text-[#A3F323]">{job.period}</p>
-                <h4 className="text-lg font-bold text-white">{job.role}</h4>
-                <p className="mb-3 text-sm font-semibold text-gray-200">{job.company}</p>
-                <p className="text-sm leading-relaxed text-gray-300">{job.detail}</p>
+          <h3 className="mb-4 text-2xl font-black text-white sm:text-4xl">PROFESSIONAL EXPERIENCE</h3>
+          <p className="mb-10 max-w-3xl text-sm leading-relaxed text-gray-300 sm:text-base">
+            Building production applications, improving frontend experiences and collaborating with teams across marketplaces, HR technology, creative platforms and more.
+          </p>
+          <div className="relative space-y-6 border-l border-[#A3F323]/40 pl-5 sm:pl-8">
+            {experience.map((job, index) => (
+              <article key={job.company} className="relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
+                <span aria-hidden="true" className="absolute -left-[26px] top-7 h-3 w-3 rounded-full border-2 border-[#A3F323] bg-[#1b4444] sm:-left-[38px]" />
+                <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <p className="mb-2 font-mono text-xs text-[#A3F323]">{job.period}</p>
+                    <h4 className="text-lg font-bold text-white sm:text-xl">{job.role}</h4>
+                    <p className="mt-1 text-sm font-semibold text-gray-200">{job.company}</p>
+                  </div>
+                  <span className="font-mono text-xs text-gray-400">0{index + 1}</span>
+                </div>
+                <p className="mb-5 text-sm leading-relaxed text-gray-200 sm:text-base">{job.summary}</p>
+                <h5 className="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-[#A3F323]">Key contributions</h5>
+                <ul className="mb-6 space-y-2">
+                  {job.achievements.map((achievement) => (
+                    <li key={achievement} className="flex items-start gap-3 text-sm leading-relaxed text-gray-300">
+                      <span aria-hidden="true" className="mt-1 text-[#A3F323]">•</span>
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2 border-t border-white/10 pt-4">
+                  {job.technologies.map((technology) => (
+                    <span key={technology} className="border border-white/20 px-2.5 py-1 font-mono text-xs text-gray-200">{technology}</span>
+                  ))}
+                </div>
               </article>
             ))}
           </div>
