@@ -1,6 +1,22 @@
+import { useEffect } from "react";
 import about from "../assets/images/Paul.png";
 
 function About() {
+  useEffect(() => {
+    if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches ||
+        !("IntersectionObserver" in window)) return;
+    const cards = document.querySelectorAll<HTMLElement>("[data-experience-card]");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("experience-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, []);
   const experience = [
     {
       role: "Software Developer (Frontend)",
@@ -376,7 +392,7 @@ function About() {
           </p>
           <div className="relative space-y-6 border-l border-[#A3F323]/40 pl-5 sm:pl-8">
             {experience.map((job, index) => (
-              <article key={job.company} className="relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
+              <article key={job.company} data-experience-card className="experience-card relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
                 <span aria-hidden="true" className="absolute -left-[26px] top-7 h-3 w-3 rounded-full border-2 border-[#A3F323] bg-[#1b4444] sm:-left-[38px]" />
                 <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
                   <div>
