@@ -165,7 +165,7 @@ const projects: PortfolioProject[] = [
     image: "/project/qrateart.png",
     category: "SaaS",
     tools: "React, TypeScript, Node.js, Tailwind CSS",
-    info: "Led frontend delivery and implemented approximately 80% of the platform, including the marketplace, payments, multi-role access, accessibility, image and performance optimisation, and SEO.",
+    info: "Led frontend delivery and implemented approximately 80% of the platform, including the marketplace, payments, multi-role access, accessibility, image optimisation, a reported 40% speed improvement, and SEO.",
     caseStudy: {
       overview: "Qrate Art connects artists, galleries, suppliers and other participants through an art-focused platform with a marketplace, exhibitions, auctions, workshops and community features. I served as Frontend Team Lead and implemented approximately 80% of the platform.",
       features: [
@@ -176,15 +176,15 @@ const projects: PortfolioProject[] = [
         "Exhibitions, auctions, workshops and an art community feed",
         "Accessibility improvements, image optimisation, performance improvements and SEO",
       ],
-      contribution: "As Frontend Team Lead, I implemented approximately 80% of the platform, including the marketplace, Stripe integration and distinct login flows for artists, galleries, suppliers and other user roles. I supervised another developer responsible for the initial admin section, reviewed code from other developers, merged their implementations, and later implemented core functionality in both the user-facing and admin sections. I also improved accessibility, optimised images, worked on application speed and implemented SEO.",
+      contribution: "As Frontend Team Lead, I implemented approximately 80% of the platform, including the marketplace, Stripe integration and distinct login flows for artists, galleries, suppliers and other user roles. I supervised another developer responsible for the initial admin section, reviewed code from other developers, merged their implementations, and later implemented core functionality in both the user-facing and admin sections. I also improved accessibility, optimised images, implemented performance improvements that increased application speed by approximately 40%, and implemented SEO.",
       challenges: [
         "Designing coherent experiences for multiple user roles",
         "Integrating marketplace flows with Stripe payments",
         "Reviewing code, integrating and merging contributions from other developers across user and admin interfaces",
         "Improving accessibility, image loading and frontend performance",
       ],
-      engineering: "Built React and TypeScript interfaces for the marketplace and role-specific user journeys, integrated Stripe payments, and contributed core functionality across the main platform and administration experience. Led frontend delivery by reviewing code, merging other developers' implementations and supervising another developer's work on the admin section. Improved accessibility, optimised images and application speed, and implemented SEO.",
-      outcome: "Delivered substantial frontend functionality across the marketplace, payments, multi-role authentication and administration, while leading implementation, reviewing code and merging contributions from other developers. The approximately 80% contribution is a personal estimate, not an independently measured metric.",
+      engineering: "Built React and TypeScript interfaces for the marketplace and role-specific user journeys, integrated Stripe payments, and contributed core functionality across the main platform and administration experience. Led frontend delivery by reviewing code, merging other developers' implementations and supervising another developer's work on the admin section. Improved accessibility, optimised images and application performance, with an approximately 40% increase in speed, and implemented SEO.",
+      outcome: "Delivered substantial frontend functionality across the marketplace, payments, multi-role authentication and administration, while leading implementation, reviewing code and merging contributions from other developers. My optimisation work improved application speed by approximately 40%, based on the reported project result. The approximately 80% contribution is a personal estimate.",
     },
   },
   {
