@@ -6,7 +6,6 @@
 html { scroll-padding-top: 6rem; }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
-  }
 }
 @keyframes experience-appear {
   from { opacity: 0.65; transform: translateY(14px); }
