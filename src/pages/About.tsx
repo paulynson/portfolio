@@ -152,7 +152,7 @@ function About() {
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                 Paul Abakada
               </span>{" "}
-              , a Senior Frontend Engineer, Product Builder, and Founder of{" "}
+              , a Frontend Engineer, Product Builder, and Founder of{" "}
               <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                 Apisat Enterprises
               </span>
@@ -333,7 +333,7 @@ function About() {
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                   Paul Abakada,
                 </span>{" "}
-                a Senior Frontend Engineer, Product Builder, and Founder of{" "}
+                a Frontend Engineer, Product Builder, and Founder of{" "}
                 <span className="text-[#A3F323] dark:text-[#A3F323] font-semibold">
                   Apisat Enterprises
                 </span>
