@@ -11,6 +11,8 @@ export interface PortfolioProject {
     features: string[];
     engineering: string;
     outcome: string;
+    challenges?: string[];
+    contribution?: string;
   };
 }
 
@@ -23,6 +25,14 @@ const projects: PortfolioProject[] = [
     category: "Real-time Web & Mobile",
     tools: "Next.js, React Native, TypeScript, WebSockets",
     info: "Built multiplayer trivia experiences for web and mobile, including scheduled games, countdowns, synchronised sessions and real-time game updates.",
+    caseStudy: {
+      overview: "TrivoGames delivers multiplayer trivia experiences across web and mobile. Players move through timed questions, live sessions and results, with the interface reflecting updates from the game session.",
+      features: ["Scheduled and live multiplayer trivia sessions", "Countdowns and timed questions", "Real-time session updates over WebSockets", "Mobile player flows in React Native and Expo", "Game results and answer review"],
+      contribution: "Frontend implementation across the web and mobile player experiences, including game session interfaces and client-side state handling.",
+      challenges: ["Keeping the active game phase consistent across navigation and screen transitions", "Coordinating live session updates with question and result views", "Designing game state around session phases rather than the currently rendered screen"],
+      engineering: "Built Next.js and React Native interfaces using TypeScript and WebSockets. The ongoing architecture work centres on explicit game phases, including game type, start, end and result, so navigation and Redux state can reflect the actual session rather than relying on the visible screen alone.",
+      outcome: "Delivered real-time trivia flows for web and mobile. State-machine-style phase detection and higher concurrency are ongoing engineering goals, not verified production results.",
+    },
   },
   {
     id: 24,
@@ -41,7 +51,9 @@ const projects: PortfolioProject[] = [
         "Booking, checkout and payment journeys",
         "Order tracking and customer communication",
       ],
-      engineering: "Developed frontend workflows in Next.js, React and TypeScript, integrating backend APIs and payment providers. The multi-role experience required coordinating forms, authentication, navigation and data across successive stages of a booking.",
+      contribution: "Frontend development of role-specific marketplace journeys, including onboarding, quotations, bookings, checkout and communication.",
+      challenges: ["Maintaining consistent multi-step booking and quotation state", "Supporting distinct customer, chef, rider and business interfaces", "Coordinating authentication, API data and payment steps across a single user journey"],
+      engineering: "Developed Next.js, React and TypeScript interfaces with reusable components, Redux Toolkit, backend API integrations and Stripe/Paystack payment flows. The multi-role marketplace required managing form progression, role-aware navigation and asynchronous data through quotation, invoice and booking stages.",
       outcome: "Delivered interconnected customer, chef and administration journeys covering discovery through booking and payment.",
     },
   },
@@ -82,7 +94,9 @@ const projects: PortfolioProject[] = [
         "Integration with the companion browser extension",
         "Application preparation and management interfaces",
       ],
-      engineering: "Built React and TypeScript interfaces for job-search workflows, using reusable components and asynchronous data handling. The product connects frontend application management with browser-based application assistance.",
+      contribution: "Frontend development of recruitment workflows and the companion Chrome extension interface.",
+      challenges: ["Keeping application data consistent between the web platform and browser-assisted flows", "Handling asynchronous application tracking and form state", "Working within Chrome extension page-context and permissions constraints"],
+      engineering: "Built the React, Vite and TypeScript frontend with reusable UI components and asynchronous data handling, collaborating with a Laravel backend. Developed the companion extension interface for job capture and autofill, using Chrome APIs to interact with supported application pages.",
       outcome: "Created a unified interface for managing applications and supporting repetitive job-search tasks.",
     },
   },
