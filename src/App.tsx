@@ -1,5 +1,6 @@
 import "./App.css";
 import { usePointerEffects } from "./hooks/usePointerEffects";
+import { useScrollReveals } from "./hooks/useScrollReveals";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { NavbarComponent } from "./component/layout/NavbarComponent";
@@ -12,6 +13,7 @@ import { BsFillMoonFill } from "react-icons/bs";
 
 function App() {
   usePointerEffects();
+  useScrollReveals();
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
     return storedTheme === "dark" ? "dark" : "light";
