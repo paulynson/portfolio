@@ -7,15 +7,18 @@ const PAGE_SIZE = 6;
 const Portfolios = () => {
   const [page, setPage] = useState(1);
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
+  const [imageExpanded, setImageExpanded] = useState(false);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
 
   const openDetails = (project: PortfolioProject) => {
     previousFocusRef.current = document.activeElement as HTMLElement | null;
+    setImageExpanded(false);
     setSelectedProject(project);
   };
 
   const closeDetails = () => {
+    setImageExpanded(false);
     setSelectedProject(null);
     window.requestAnimationFrame(() => previousFocusRef.current?.focus());
   };
@@ -27,7 +30,10 @@ const Portfolios = () => {
     closeButtonRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeDetails();
+      if (event.key === "Escape") {
+        if (imageExpanded) setImageExpanded(false);
+        else closeDetails();
+      }
       if (event.key === "Tab") {
         const modal = document.getElementById("project-details-modal");
         const focusable = modal?.querySelectorAll<HTMLElement>('button:not([disabled]), a[href]');
@@ -48,7 +54,7 @@ const Portfolios = () => {
       document.body.style.overflow = previousOverflow;
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [selectedProject]);
+  }, [selectedProject, imageExpanded]);
 
   const totalPages = Math.ceil(projects.length / PAGE_SIZE);
   const paginated = projects.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -88,7 +94,7 @@ const Portfolios = () => {
                 }
               }}
               onClick={() => { if (project.link === "#") openDetails(project); }}
-              className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500"
+              className="group relative bg-black dark:bg-black text-white dark:text-white overflow-hidden hover:bg-[#A3F323] dark:hover:bg-[#A3F323] hover:text-black dark:hover:text-black transition-all duration-500 hover:shadow-[0_0_0_1px_#A3F323] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]"
             >
               {/* Project Number */}
               <div className="absolute text-4xl font-black transition-opacity duration-500 top-4 sm:top-6 left-4 sm:left-6 sm:text-6xl opacity-10 group-hover:opacity-20">
@@ -101,7 +107,7 @@ const Portfolios = () => {
                   alt={`${project.title} application screenshot`}
                   loading="lazy"
                   decoding="async"
-                  className="block w-full aspect-video object-cover border-b border-white/10"
+                  className="block w-full aspect-video object-cover border-b border-white/10 transition-transform duration-500 motion-safe:group-hover:scale-[1.025]"
                 />
               )}
 
@@ -198,12 +204,23 @@ const Portfolios = () => {
                 {selectedProject.category}
               </p>
               {selectedProject.image && (
-                <img
-                  src={selectedProject.image}
-                  alt={`${selectedProject.title} application screenshot`}
-                  className="mb-6 block w-full h-auto border border-white/20"
-                  decoding="async"
-                />
+                <div className="mb-6">
+                  <button
+                    type="button"
+                    onClick={() => setImageExpanded((value) => !value)}
+                    aria-label={imageExpanded ? "Reduce project screenshot" : "Enlarge project screenshot"}
+                    aria-pressed={imageExpanded}
+                    className="block w-full cursor-zoom-in border border-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F323]"
+                  >
+                    <img
+                      src={selectedProject.image}
+                      alt={`${selectedProject.title} application screenshot`}
+                      className={`block w-full h-auto ${imageExpanded ? "max-h-none object-contain" : "max-h-72 object-cover object-top"}`}
+                      decoding="async"
+                    />
+                  </button>
+                  <p className="mt-2 font-mono text-xs text-gray-400">Click screenshot to {imageExpanded ? "reduce" : "expand"} image</p>
+                </div>
               )}
               <div id="project-details-description" className="space-y-7">
                 <section>
