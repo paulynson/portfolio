@@ -1,0 +1,15 @@
+# Paul Abakada | Senior Frontend Engineer
+
+> Portfolio of Paul Abakada, focused on React, Next.js, TypeScript, React Native and frontend engineering.
+
+## Pages
+- [Portfolio and engineering projects](https://abakadapaul.netlify.app/#portfolio)
+- [Experience and skills](https://abakadapaul.netlify.app/#about)
+- [Contact](https://abakadapaul.netlify.app/#contact)
+
+## Selected work
+- TrivoGames: multiplayer trivia across web and mobile
+- Chef4Me: multi-role chef marketplace and booking workflows
+- GetNextRole: recruitment platform and browser extension
+
+For current project details, refer to the portfolio website.
