@@ -1,4 +1,5 @@
 import "./App.css";
+import { usePointerEffects } from "./hooks/usePointerEffects";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { NavbarComponent } from "./component/layout/NavbarComponent";
@@ -10,6 +11,7 @@ import { BsSun } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
 function App() {
+  usePointerEffects();
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
     return storedTheme === "dark" ? "dark" : "light";
@@ -56,6 +58,7 @@ function App() {
           {theme === "light" ? <BsSun /> : <BsFillMoonFill />}
         </button>
       </div>
+      <div id="cursor-glow" aria-hidden="true" className="cursor-glow" />
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<Homepage />} />
