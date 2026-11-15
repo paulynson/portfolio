@@ -108,6 +108,8 @@ const Portfolios = () => {
                   alt={`${project.title} application screenshot`}
                   loading="lazy"
                   decoding="async"
+                  width={960}
+                  height={540}
                   className="block w-full aspect-video object-cover border-b border-white/10 transition-transform duration-500 motion-safe:group-hover:scale-[1.025]"
                 />
               )}
@@ -151,14 +153,14 @@ const Portfolios = () => {
                   )}
                 </div>
 
-                <p className="mb-6 text-sm leading-relaxed opacity-80">
+                <p className="mb-6 text-sm leading-relaxed text-gray-200 group-hover:text-black">
                   {project.info}
                 </p>
 
                 {project.caseStudy && (
                   <div className="mb-5 border-l-2 border-[#A3F323] pl-3">
                     <p className="mb-1 font-mono text-[11px] font-semibold uppercase tracking-wider text-[#A3F323] group-hover:text-black">Engineering focus</p>
-                    <p className="text-sm leading-relaxed opacity-90">{project.caseStudy.engineering}</p>
+                    <p className="text-sm leading-relaxed text-gray-100 group-hover:text-black">{project.caseStudy.engineering}</p>
                   </div>
                 )}
 
