@@ -14,7 +14,7 @@ const Homepage = () => {
         <link rel="canonical" href="https://abakadapaul.netlify.app/" />
       </Helmet>
       {/* Ultra Modern Hero Section */}
-      <section className="min-h-screen bg-black dark:bg-[#1b4444] text-white dark:text-white relative overflow-hidden flex items-center px-4 sm:px-6 transition-colors duration-500">
+      <section data-pointer-spotlight className="pointer-spotlight min-h-screen bg-black dark:bg-[#1b4444] text-white dark:text-white relative overflow-hidden flex items-center px-4 sm:px-6 transition-colors duration-500">
         {/* Animated Background Grid */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
@@ -52,14 +52,14 @@ const Homepage = () => {
             <div className="flex gap-4 mb-8 flex-col sm:gap-6 sm:mb-12 hero-enter hero-enter-delayed">
               <a
                 href="#portfolio"
-                className="group bg-[#A3F323] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-none font-bold text-base sm:text-lg hover:bg-white transition-all duration-300 flex items-center justify-center sm:justify-start gap-3 w-full sm:w-fit"
+                data-pointer-magnetic className="magnetic-action group bg-[#A3F323]" text-black px-6 sm:px-8 py-3 sm:py-4 rounded-none font-bold text-base sm:text-lg hover:bg-white transition-all duration-300 flex items-center justify-center sm:justify-start gap-3 w-full sm:w-fit"
               >
                 <span>VIEW PROJECTS</span>
                 <FaArrowDown className="transition-transform duration-300 group-hover:translate-y-1" />
               </a>
               <a
                 href="#contact"
-                className="border-2 border-[#A3F323] text-[#A3F323] px-6 sm:px-8 py-3 sm:py-4 rounded-none font-bold text-base sm:text-lg hover:bg-[#A3F323] hover:text-black transition-all duration-300 w-full sm:w-fit text-center"
+                data-pointer-magnetic className="magnetic-action border-2 border-[#A3F323] text-[#A3F323]" px-6 sm:px-8 py-3 sm:py-4 rounded-none font-bold text-base sm:text-lg hover:bg-[#A3F323] hover:text-black transition-all duration-300 w-full sm:w-fit text-center"
               >
                 GET IN TOUCH
               </a>
