@@ -45,8 +45,8 @@ const Homepage = () => {
               </h1>
               <div className="max-w-2xl mb-6 text-lg text-gray-400 sm:text-xl md:text-2xl sm:mb-8">
                 <span className="text-[#A3F323]">//</span> Senior Frontend Engineer. React. Next.js. TypeScript.
-                <span className="block hero-type-line">I build scalable, high-performance web and mobile applications</span>
-                <span className="block">with 4+ years of production engineering experience.</span>
+                <span className="block hero-type-line">I engineer reliable, scalable web and mobile products</span>
+                <span className="block">with a focus on architecture, performance and maintainable frontend systems.</span>
               </div>
             </div>
             <div className="flex gap-4 mb-8 flex-col sm:gap-6 sm:mb-12 hero-enter hero-enter-delayed">
