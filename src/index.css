@@ -6,17 +6,6 @@
 html { scroll-padding-top: 6rem; }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
-  @supports (animation-timeline: view()) {
-    .experience-card {
-      animation: experience-appear both linear;
-      animation-timeline: view();
-      animation-range: entry 0% entry 25%;
-    }
-  }
-  @supports not (animation-timeline: view()) {
-    .experience-card.experience-visible {
-      animation: experience-appear 500ms ease-out both;
-    }
   }
 }
 @keyframes experience-appear {
@@ -101,5 +90,19 @@ html { scroll-padding-top: 6rem; }
   }
   .magnetic-action:hover {
     box-shadow: 0 8px 24px rgba(163,243,35,.22);
+  }
+}
+
+/* Noticeable scroll entrances. Translate is independent of 3D hover transforms. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-ready {
+    opacity: 0;
+    translate: 0 38px;
+    transition: opacity 750ms cubic-bezier(.2,.7,.2,1), translate 750ms cubic-bezier(.2,.7,.2,1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal-ready.reveal-visible {
+    opacity: 1;
+    translate: 0 0;
   }
 }
