@@ -75,8 +75,8 @@ const Portfolios = () => {
             <span className="block text-black dark:text-[#A3F323]">WORKS</span>
           </h2>
           <p className="max-w-3xl text-xl text-gray-600 dark:text-gray-200">
-            Selected frontend engineering work across production marketplaces, real-time
-            applications, education platforms, SaaS and React Native mobile experiences.
+            Explore the engineering behind production marketplaces, real-time applications,
+            education platforms, SaaS and React Native mobile experiences.
           </p>
         </div>
 
@@ -155,6 +155,13 @@ const Portfolios = () => {
                   {project.info}
                 </p>
 
+                {project.caseStudy && (
+                  <div className="mb-5 border-l-2 border-[#A3F323] pl-3">
+                    <p className="mb-1 font-mono text-[11px] font-semibold uppercase tracking-wider text-[#A3F323] group-hover:text-black">Engineering focus</p>
+                    <p className="text-sm leading-relaxed opacity-90">{project.caseStudy.engineering}</p>
+                  </div>
+                )}
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tools.split(", ").slice(0, 4).map((tool) => (
@@ -166,6 +173,15 @@ const Portfolios = () => {
                     </span>
                   ))}
                 </div>
+                {project.caseStudy && (
+                  <button
+                    type="button"
+                    onClick={(event) => { event.stopPropagation(); openDetails(project); }}
+                    className="mt-5 inline-flex items-center gap-2 border-b border-[#A3F323] pb-1 text-sm font-semibold text-[#A3F323] transition-colors group-hover:border-black group-hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#A3F323]"
+                  >
+                    Explore engineering case study <FaExternalLinkAlt aria-hidden="true" size={11} />
+                  </button>
+                )}
               </div>
             </div>
           ))}
