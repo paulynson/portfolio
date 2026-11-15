@@ -39,12 +39,12 @@ export function usePointerEffects() {
       current.style.setProperty("--pointer-x", `${px * 100}%`);
       current.style.setProperty("--pointer-y", `${py * 100}%`);
       if (current.matches("[data-pointer-tilt]")) {
-        current.style.setProperty("--tilt-x", `${(0.5 - py) * 6}deg`);
-        current.style.setProperty("--tilt-y", `${(px - 0.5) * 6}deg`);
+        current.style.setProperty("--tilt-x", `${(0.5 - py) * 3}deg`);
+        current.style.setProperty("--tilt-y", `${(px - 0.5) * 3}deg`);
       }
       if (current.matches("[data-pointer-magnetic]")) {
-        current.style.setProperty("--magnet-x", `${(px - 0.5) * 12}px`);
-        current.style.setProperty("--magnet-y", `${(py - 0.5) * 12}px`);
+        current.style.setProperty("--magnet-x", `${(px - 0.5) * 8}px`);
+        current.style.setProperty("--magnet-y", `${(py - 0.5) * 8}px`);
       }
     };
 
