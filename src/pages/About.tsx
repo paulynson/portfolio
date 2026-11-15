@@ -170,7 +170,7 @@ function About() {
                 MongoDB
               </span>
               , with strong experience in state management, REST APIs, AI
-              integrations, Docker, and WordPress. I care deeply about
+              integrations and WordPress. I care deeply about
               performance, accessibility, and writing code that teams can
               maintain and build on.
             </p>
@@ -346,7 +346,7 @@ function About() {
                   and MongoDB
                 </span>
                 , with strong experience in state management, REST APIs, AI
-                integrations, Docker, and WordPress. I care deeply about
+                integrations and WordPress. I care deeply about
                 performance, accessibility, and writing code that teams can
                 maintain and build on.
               </p>
