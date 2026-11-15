@@ -211,7 +211,7 @@ function About() {
                 {skills.frontend.map((skill, index) => (
                   <div
                     key={index}
-                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
+                    className="skill-interactive font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -236,7 +236,7 @@ function About() {
                 {skills.backend.map((skill, index) => (
                   <div
                     key={index}
-                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
+                    className="skill-interactive font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -261,7 +261,7 @@ function About() {
                 {skills.tools.map((skill, index) => (
                   <div
                     key={index}
-                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
+                    className="skill-interactive font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -286,7 +286,7 @@ function About() {
                 {skills.expertise.map((skill, index) => (
                   <div
                     key={index}
-                    className="font-mono text-xs text-gray-200 dark:text-gray-100"
+                    className="skill-interactive font-mono text-xs text-gray-200 dark:text-gray-100"
                   >
                     &gt; {skill}
                   </div>
@@ -392,7 +392,7 @@ function About() {
           </p>
           <div className="relative space-y-6 border-l border-[#A3F323]/40 pl-5 sm:pl-8">
             {experience.map((job, index) => (
-              <article key={job.company} data-experience-card className="experience-card relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
+              <article key={job.company} data-experience-card className="experience-card experience-interactive relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
                 <span aria-hidden="true" className="absolute -left-[26px] top-7 h-3 w-3 rounded-full border-2 border-[#A3F323] bg-[#1b4444] sm:-left-[38px]" />
                 <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
                   <div>
