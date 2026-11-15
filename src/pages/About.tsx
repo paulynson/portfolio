@@ -111,7 +111,7 @@ function About() {
 
   return (
     <section
-      className="py-16 sm:py-32 bg-black dark:bg-[#1b4444] text-white dark:text-white transition-colors duration-500"
+      data-pointer-spotlight className="pointer-spotlight py-16 sm:py-32 bg-black dark:bg-[#1b4444] text-white dark:text-white transition-colors duration-500"
       id="about"
     >
       <div className="px-4 mx-auto sm:px-6 max-w-7xl">
@@ -392,7 +392,7 @@ function About() {
           </p>
           <div className="relative space-y-6 border-l border-[#A3F323]/40 pl-5 sm:pl-8">
             {experience.map((job, index) => (
-              <article key={job.company} data-experience-card className="experience-card experience-interactive relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
+              <article key={job.company} data-experience-card data-pointer-spotlight className="pointer-spotlight experience-card experience-interactive relative border border-gray-700 bg-gray-900 p-5 transition-colors hover:border-[#A3F323]/60 dark:border-gray-500 dark:bg-black/30 sm:p-7">
                 <span aria-hidden="true" className="absolute -left-[26px] top-7 h-3 w-3 rounded-full border-2 border-[#A3F323] bg-[#1b4444] sm:-left-[38px]" />
                 <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
                   <div>
