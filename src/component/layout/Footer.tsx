@@ -17,8 +17,9 @@ function Footer() {
       <div className="mt-3 flex justify-center text-gray-800  hover:text-gray-300 ">
         <a
           href="https://twitter.com/codefraction__/"
-          target="-blank"
-          rel="noreferrer"
+          aria-label="Visit Paul Abakada on X (opens in a new tab)"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" hover:text-gray-300  px-3"
         >
           {" "}
@@ -26,8 +27,9 @@ function Footer() {
         </a>
         <a
           href="https://instagram.com/Abakadapaul/"
-          target="-blank"
-          rel="noreferrer"
+          aria-label="Visit Paul Abakada on Instagram (opens in a new tab)"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" hover:text-gray-300  px-3"
         >
           {" "}
@@ -35,8 +37,9 @@ function Footer() {
         </a>
         <a
           href="https://github.com/paulynson"
-          target="-blank"
-          rel="noreferrer"
+          aria-label="Visit Paul Abakada on GitHub (opens in a new tab)"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" hover:text-gray-300  px-3"
         >
           {" "}
