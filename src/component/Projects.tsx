@@ -47,12 +47,25 @@ const projects: PortfolioProject[] = [
   },
   {
     id: 25,
-    link: "https://schoolers.academy",
-    title: "Virtual School Platform",
+    // Public launch pending. Restore the URL once Schoolers is live:
+    // link: "https://schoolers.academy",
+    link: "#",
+    title: "Schoolers | Virtual School Platform",
     image: "/project/schoolers.png",
     category: "Education",
     tools: "Next.js, TypeScript, LiveKit, React",
-    info: "Developed student, tutor and parent interfaces and live classroom features with real-time audio and video controls.",
+    info: "Developed student, tutor and parent experiences for an online learning platform, including live classrooms with real-time audio and video controls.",
+    caseStudy: {
+      overview: "Schoolers is an online learning platform designed around the needs of students, tutors and parents. The frontend brings together role-specific learning experiences and live virtual classrooms, allowing participants to engage with online lessons through a consistent interface. The product is awaiting its public launch.",
+      features: [
+        "Dedicated interfaces for students, tutors and parents",
+        "Live virtual classroom experiences",
+        "Real-time audio and video controls for online lessons",
+        "Responsive learning interfaces for different user roles",
+      ],
+      engineering: "Developed frontend features using Next.js, React and TypeScript, integrating LiveKit for real-time classroom audio and video. The implementation focuses on managing interactive classroom controls and providing distinct, usable experiences for students, tutors and parents.",
+      outcome: "Built the frontend foundation for role-based online learning and interactive virtual classes. Schoolers has not yet launched publicly, so live usage results are not claimed.",
+    },
   },
   {
     id: 1,
