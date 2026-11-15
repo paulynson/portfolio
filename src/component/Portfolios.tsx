@@ -4,6 +4,17 @@ import { FaExternalLinkAlt, FaChevronLeft, FaChevronRight, FaTimes, FaInfoCircle
 
 const PAGE_SIZE = 6;
 
+// Netlify Image CDN resizes and transcodes existing screenshots on request.
+// The original image remains the fallback if an image transformation is unavailable.
+const optimizedImage = (src: string, width: number) =>
+  src.startsWith("/project/")
+    ? `/.netlify/images?url=${encodeURIComponent(src)}&w=${width}&fm=webp`
+    : src;
+
+const responsiveImageSet = (src: string) =>
+  [480, 768, 960].map((width) => `${optimizedImage(src, width)} ${width}w`).join(", ");
+
+
 const Portfolios = () => {
   const [page, setPage] = useState(1);
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
@@ -105,6 +116,8 @@ const Portfolios = () => {
               {project.image && (
                 <img
                   src={project.image}
+                  srcSet={project.image.startsWith("/project/") ? responsiveImageSet(project.image) : undefined}
+                  sizes="(min-width: 1024px) 45vw, (min-width: 640px) 90vw, 100vw"
                   alt={`${project.title} application screenshot`}
                   loading="lazy"
                   decoding="async"
@@ -233,6 +246,8 @@ const Portfolios = () => {
                   >
                     <img
                       src={selectedProject.image}
+                      srcSet={selectedProject.image.startsWith("/project/") ? responsiveImageSet(selectedProject.image) : undefined}
+                      sizes="(min-width: 640px) 640px, 100vw"
                       alt={`${selectedProject.title} application screenshot`}
                       className={`block w-full h-auto ${imageExpanded ? "max-h-none object-contain" : "max-h-72 object-cover object-top"}`}
                       decoding="async"
