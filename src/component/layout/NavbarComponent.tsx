@@ -6,30 +6,32 @@ interface NavListItemProps {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
+  active?: boolean;
 }
 
-function NavListItem({ href, children, onClick }: NavListItemProps) {
+function NavListItem({ href, children, onClick, active }: NavListItemProps) {
   return (
     <li>
       <a
         href={href}
         onClick={onClick}
+        aria-current={active ? "location" : undefined}
         className="text-white dark:text-white hover:text-[#A3F323] dark:hover:text-[#A3F323] transition-colors duration-200 font-mono text-sm tracking-wider relative group"
       >
         <span className="text-[#A3F323] dark:text-[#A3F323] mr-1">&gt;</span>
         {children}
-        <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#A3F323] dark:bg-[#A3F323] transition-all duration-300 group-hover:w-full"></span>
+        <span className={`absolute -bottom-1 left-0 h-px bg-[#A3F323] dark:bg-[#A3F323] transition-all duration-300 group-hover:w-full ${active ? "w-full" : "w-0"}`}></span>
       </a>
     </li>
   );
 }
 
-function NavList({ onNavigate }: { onNavigate?: () => void }) {
+function NavList({ onNavigate, activeSection }: { onNavigate?: () => void; activeSection: string }) {
   return (
     <ul className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
-      <NavListItem href="#portfolio" onClick={onNavigate}>PROJECTS</NavListItem>
-      <NavListItem href="#about" onClick={onNavigate}>ABOUT</NavListItem>
-      <NavListItem href="#contact" onClick={onNavigate}>CONTACT</NavListItem>
+      <NavListItem href="#portfolio" active={activeSection === "portfolio"} onClick={onNavigate}>PROJECTS</NavListItem>
+      <NavListItem href="#about" active={activeSection === "about"} onClick={onNavigate}>ABOUT</NavListItem>
+      <NavListItem href="#contact" active={activeSection === "contact"} onClick={onNavigate}>CONTACT</NavListItem>
       <li>
         <a href="/Paul_Abakada_CV.pdf" download="Paul_Abakada_CV.pdf" onClick={onNavigate}
           className="inline-flex items-center justify-center border border-[#A3F323] px-4 py-2 font-mono text-sm font-bold text-[#A3F323] hover:bg-[#A3F323] hover:text-black transition-colors duration-200"
@@ -42,6 +44,7 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
 export function NavbarComponent() {
   const [openNav, setOpenNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
@@ -58,6 +61,24 @@ export function NavbarComponent() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const sections = ["portfolio", "about", "contact"];
+    const updateActiveSection = () => {
+      const current = sections.filter((id) => {
+        const section = document.getElementById(id);
+        return section && section.getBoundingClientRect().top <= window.innerHeight * 0.4;
+      }).pop() ?? "";
+      setActiveSection(current);
+    };
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
     };
   }, []);
 
@@ -79,7 +100,7 @@ export function NavbarComponent() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <NavList onNavigate={() => setOpenNav(false)} />
+            <NavList activeSection={activeSection} onNavigate={() => setOpenNav(false)} />
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,7 +122,7 @@ export function NavbarComponent() {
         {/* Mobile Navigation */}
         {openNav && (
           <div id="mobile-navigation" className="lg:hidden mt-6 pb-4 border-t border-[#A3F323]/20 pt-6 bg-black/95 dark:bg-[#1b4444]/95 backdrop-blur-md rounded-lg">
-            <NavList />
+            <NavList activeSection={activeSection} onNavigate={() => setOpenNav(false)} />
           </div>
         )}
       </nav>
