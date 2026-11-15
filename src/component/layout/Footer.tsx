@@ -14,36 +14,36 @@ function Footer() {
         </span>
       </div>
 
-      <div className="mt-3 flex justify-center text-gray-800  hover:text-gray-300 ">
+      <div className="mt-3 flex justify-center text-gray-800">
         <a
           href="https://twitter.com/codefraction__/"
           aria-label="Visit Paul Abakada on X (opens in a new tab)"
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:text-gray-300  px-3"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F323]"
         >
           {" "}
-          <FaTwitter className="text-gray-800 dark:text-gray-100 hover:scale-125 hover:text-blue-700" />{" "}
+          <FaTwitter className="text-gray-800 dark:text-gray-100 hover:scale-110 hover:text-blue-700" />{" "}
         </a>
         <a
           href="https://instagram.com/Abakadapaul/"
           aria-label="Visit Paul Abakada on Instagram (opens in a new tab)"
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:text-gray-300  px-3"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F323]"
         >
           {" "}
-          <FaInstagram className="text-gray-800 dark:text-gray-100 hover:scale-125 hover:text-blue-700" />{" "}
+          <FaInstagram className="text-gray-800 dark:text-gray-100 hover:scale-110 hover:text-blue-700" />{" "}
         </a>
         <a
           href="https://github.com/paulynson"
           aria-label="Visit Paul Abakada on GitHub (opens in a new tab)"
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:text-gray-300  px-3"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F323]"
         >
           {" "}
-          <FaGithub className="text-gray-800 dark:text-gray-100 hover:scale-125 hover:text-blue-700" />{" "}
+          <FaGithub className="text-gray-800 dark:text-gray-100 hover:scale-110 hover:text-blue-700" />{" "}
         </a>
       </div>
     </footer>
