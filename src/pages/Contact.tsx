@@ -31,10 +31,10 @@ function Contact() {
               <FaEnvelope aria-hidden="true" size={20} />
             </div>
             <p className="mb-2 font-mono text-xs uppercase tracking-widest text-gray-400">Get in touch</p>
-            <a href="mailto:paulabakada@gmail.com" className="block break-all text-xl font-semibold text-white underline decoration-[#A3F323]/50 underline-offset-8 transition-colors hover:text-[#A3F323] sm:text-2xl">
-              paulabakada@gmail.com
+            <a href="mailto:hello@abakadapaul.site" className="block break-all text-xl font-semibold text-white underline decoration-[#A3F323]/50 underline-offset-8 transition-colors hover:text-[#A3F323] sm:text-2xl">
+              hello@abakadapaul.site
             </a>
-            <a href="mailto:paulabakada@gmail.com?subject=Let%27s%20connect" data-pointer-magnetic className="magnetic-action contact-cta mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
+            <a href="mailto:hello@abakadapaul.site?subject=Let%27s%20connect" data-pointer-magnetic className="magnetic-action contact-cta mt-8 inline-flex items-center gap-3 bg-[#A3F323] px-6 py-3 font-mono text-sm font-bold text-black transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A3F323]">
               SEND AN EMAIL <FaArrowRight aria-hidden="true" />
             </a>
           </div>
