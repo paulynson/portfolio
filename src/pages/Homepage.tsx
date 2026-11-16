@@ -11,7 +11,7 @@ const Homepage = () => {
         <title>
           Paul Abakada | Frontend Engineer | React, Next.js, TypeScript
         </title>
-        <link rel="canonical" href="https://abakadapaul.netlify.app/" />
+        <link rel="canonical" href="https://abakadapaul.site/" />
       </Helmet>
       {/* Ultra Modern Hero Section */}
       <section data-pointer-spotlight className="pointer-spotlight min-h-screen bg-black dark:bg-[#1b4444] text-white dark:text-white relative overflow-hidden flex items-center px-4 sm:px-6 transition-colors duration-500">
